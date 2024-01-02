@@ -21,11 +21,14 @@ body {
     font-size: 2em;
 }
 
-.container {
+.container-header{
     display: flex;
     justify-content: space-around;
 }
-
+.container-body{
+    display: flex;
+    justify-content: space-around;
+}
 .panel {
 
     background-size: cover;

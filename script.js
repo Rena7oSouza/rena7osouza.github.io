@@ -1,24 +1,34 @@
-const panels = document.querySelectorAll('.panel')
+const panelsheader = document.querySelectorAll('.container-header .panel');
 
+function removeActiveClasses(panels) {
+    panels.forEach(panel => {
+        panel.classList.remove('active');
+    });
+}
 
-
-panels.forEach(panel => {
+panelsheader.forEach(panel => {
     panel.addEventListener('click', () => {
-        removeActiveClasses()
-        panel.classList.add('active')
+        removeActiveClasses(panelsheader);
+        panel.classList.add('active');
 
         var panelName = panel.getAttribute('data-panel');
         var contentDiv = document.getElementById(panelName + '-content');
         document.getElementById('content').innerHTML = contentDiv.innerHTML;
+        if (panelName == 'projects') {
+            const panelsbody = document.querySelectorAll('.container-body .panel');
+            panelsbody.forEach(panel => {
+                panel.addEventListener('click', () => {
+                    removeActiveClasses(panelsbody);
+                    panel.classList.add('active');
+                });
+            });
+        }
         document.getElementById('content').scrollIntoView({ behavior: "smooth" });
-    })
-})
+    });
+});
 
-function removeActiveClasses() {
-    panels.forEach(panel => {
-        panel.classList.remove('active')
-    })
-}
+
+
 const title = 'WELCOME TO MY PORTFOLIO';
 let i = 0;
 

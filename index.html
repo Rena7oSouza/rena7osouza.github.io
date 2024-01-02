@@ -5,121 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
-    body {
-      background-color: black;
-      color: white;
-    }
 
-    .background {
-      background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
-      background-size: cover;
-      background-position: center;
-      background-size: cover;
-      border: 2px solid orangered;
-      border-radius: 10px;
-    }
-
-    .header {
-      height: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 2em;
-    }
-
-    .container {
-      display: flex;
-      justify-content: space-around;
-    }
-
-    .panel {
-
-      background-size: cover;
-      background-position: center;
-      height: 200px;
-      border-radius: 10px;
-      cursor: pointer;
-      flex: 0.5;
-      margin: 10px;
-      transition: flex 0.7s ease-in-out;
-      position: relative;
-      align-items: center;
-      justify-content: center;
-      display: flex;
-      color: white;
-      font-size: 2em;
-    }
-
-    .panel::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(255, 255, 255, 0.75);
-      transition: background 0.5s ease-in-out;
-    }
-
-    .panel.active {
-      flex: 5;
-    }
-
-    .panel.active::after {
-      background: transparent;
-    }
-
-    #content {
-      width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-      margin-top: 1%;
-      border: 2px solid orangered;
-      border-radius: 10px;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-
-    @media screen and (max-width: 600px) {
-      .container {
-        flex-direction: column;
-      }
-
-      .panel {
-        margin: 5px 0;
-      }
-
-      .header {
-        font-size: 1.6em;
-        margin-left: 5%;
-      }
-
-      #content {
-        width: 100%;
-      }
-    }
-
-    #title::after {
-      content: '|';
-      animation: blink 1s infinite;
-    }
-
-    @keyframes blink {
-      0% {
-        opacity: 0;
-      }
-
-      50% {
-        opacity: 1;
-      }
-
-      100% {
-        opacity: 0;
-      }
-    }
   </style>
-  <title>Expanding Cards</title>
+  <title>Renato Souza's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -148,7 +37,13 @@
   </div>
   <div id="content"></div>
   <div id="about-me-content" style="display: none;">
-    <p>Este é o conteúdo do painel 'About Me'</p>
+    <img class="about-me-img"
+      src='https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
+      alt="Sua Foto">
+    <div>
+      <h1>About Me</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis et praesentium iure a, debitis illum voluptates consequatur laboriosam. Quisquam odio officia molestias nihil voluptas vel error. Aliquid nesciunt enim consectetur assumenda cumque repellat sunt suscipit aspernatur alias tenetur molestias ullam voluptates ipsam, et sed ad blanditiis veniam quas laborum illum odit officiis? Natus nostrum quam vel exercitationem. Amet, iusto nam, quae molestias obcaecati eos quaerat ipsum, maxime facilis corrupti cumque quas sequi enim earum voluptatibus inventore quibusdam provident! Hic pariatur ad magnam ducimus ipsa saepe odit quae modi corrupti sequi nesciunt provident blanditiis placeat labore magni deleniti, quisquam nostrum ut mollitia molestias quam iste accusamus porro vero! Qui rem ipsam, rerum quibusdam, exercitationem aut debitis architecto doloribus vero nesciunt molestiae laboriosam! Officiis vero culpa laudantium magni debitis cupiditate ea doloremque, facilis nam, necessitatibus totam numquam voluptates quaerat suscipit nihil, blanditiis repellat quis exercitationem quam? Maxime, necessitatibus atque nesciunt voluptatibus harum sunt, nisi quidem totam molestias accusantium assumenda qui optio deleniti! Animi, vero eum doloribus culpa molestiae, numquam eos nisi provident neque quo libero quisquam blanditiis id odio, similique ipsam vitae! Quaerat, vel ad voluptas error placeat ab magni quo, sed et, quasi officia sint corporis! Enim mollitia officia reprehenderit odit, facere obcaecati, similique cumque dolores eveniet est, sapiente error. Nemo fuga qui, accusamus earum ducimus tenetur pariatur ex incidunt impedit autem velit tempore dolorum quos blanditiis magni quod sint, labore ipsam adipisci! Totam ipsum accusantium vero amet. Autem obcaecati impedit eveniet, odit sapiente beatae recusandae debitis nobis temporibus animi fugit, nulla excepturi blanditiis molestiae delectus in vero. Commodi, a! Ab doloremque earum consectetur eius recusandae laudantium, perspiciatis eaque laborum enim? Numquam quidem laudantium harum, sapiente ea aliquam ratione quod placeat porro! Quod harum ratione hic, delectus magni exercitationem minus? Laudantium a perspiciatis aliquid commodi animi ex corrupti iste omnis beatae eveniet. Fugiat cupiditate totam, aperiam cumque ut molestiae alias, corporis voluptate assumenda quisquam optio nihil ipsum nemo nobis minima quam debitis? Maiores, eveniet consequuntur nemo inventore doloribus quod aspernatur iusto labore iure a ab aperiam laborum. Iure autem fuga quo aliquam illo, numquam totam! Nulla quisquam molestias a repudiandae delectus deserunt, illo consequatur suscipit exercitationem harum amet quibusdam quasi dolorem voluptates voluptas molestiae odio blanditiis unde eaque recusandae veniam eius voluptatibus inventore. Unde, recusandae. Sapiente, vero. Veniam assumenda provident, doloribus molestias cum voluptatibus adipisci officia, deserunt possimus, excepturi delectus illo nesciunt ducimus pariatur nihil? Libero sint a culpa quis doloremque et ipsam laboriosam, eligendi voluptatum ad reprehenderit voluptates nemo tempore doloribus. Impedit illum sed nulla facere delectus, magni veritatis eius, esse nisi amet iste quis accusamus doloremque maxime iusto obcaecati voluptas animi fugit porro distinctio dolor voluptatem? Nam sint natus maiores minus modi minima aliquid, veritatis consectetur maxime vero laboriosam omnis atque, iusto quis sequi consequuntur quae quaerat voluptas nesciunt? Possimus, eligendi. Nihil repellendus nesciunt quae facilis minus quibusdam temporibus vero suscipit aliquam facere ex exercitationem nam veniam possimus eveniet dicta assumenda, voluptate molestiae quidem atque veritatis aut voluptatum. Eaque odio at ea nostrum possimus blanditiis amet nihil repellendus assumenda.</p>
+    </div>
   </div>
   <div id="graduations-content" style="display: none;">
     <p>Este é o conteúdo do painel 'Graduations'</p>
@@ -158,52 +53,8 @@
   </div>
   <div id="contact-me-content" style="display: none;">
   </div>
-
-  <script>
-    const panels = document.querySelectorAll('.panel')
-
-    panels.forEach(panel => {
-      panel.addEventListener('click', () => {
-        removeActiveClasses()
-        panel.classList.add('active')
-
-        var panelName = panel.getAttribute('data-panel');
-        var contentDiv = document.getElementById(panelName + '-content');
-        document.getElementById('content').innerHTML = contentDiv.innerHTML;
-        document.getElementById('content').scrollIntoView({behavior: "smooth"});
-      })
-    })
-
-    function removeActiveClasses() {
-      panels.forEach(panel => {
-        panel.classList.remove('active')
-      })
-    }
-    const title = 'WELCOME TO MY PORTFOLIO';
-    let i = 0;
-
-    function typeWriter() {
-      if (i < title.length) {
-        document.getElementById('title').innerHTML += title.charAt(i);
-        i++;
-        setTimeout(typeWriter, 100);
-      } else {
-        document.getElementById('title').style.animation = 'none';
-        setTimeout(() => {
-          document.getElementById('title').innerHTML = '';
-          document.getElementById('title').style.animation = '';
-          i = 0;
-          let newTitle = document.getElementById('title').cloneNode(true);
-          document.getElementById('title').parentNode.replaceChild(newTitle, document.getElementById('title'));
-          setTimeout(typeWriter, 2000);
-        }, 3000);
-      }
-    }
-
-    setTimeout(typeWriter, 2000);
-    document.getElementById('content').innerHTML = document.getElementById('about-me-content').innerHTML;
-  </script>
-
+  <script src="script.js"></script>
 </body>
+
 
 </html>

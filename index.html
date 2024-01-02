@@ -71,7 +71,7 @@
         margin: 5px 0;
       }
       .header {
-      font-size: 1em;
+      font-size: 1.5em;
     }
     }
 
@@ -103,25 +103,36 @@
       <h1 id="title"></h1>
     </div>
     <div class="container">
-      <div class="panel active"
+      <div class="panel active" data-panel="about-me"
         style="background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
         <h3>About Me</h3>
       </div>
-      <div class="panel"
+      <div class="panel" data-panel="graduations"
         style="background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
         <h3>Graduations</h3>
       </div>
-      <div class="panel"
+      <div class="panel" data-panel="projects"
         style="background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
         <h3>Projects</h3>
       </div>
-      <div class="panel"
+      <div class="panel" data-panel="contact-me"
         style="background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
         <h3>Contact Me</h3>
       </div>
     </div>
   </div>
-  <div id="content"></div>
+  <div id="about-me-content" style="display:;">
+    <p>Este é o conteúdo do painel 'About Me'</p>
+  </div>
+  <div id="graduations-content" style="display: none;">
+    <p>Este é o conteúdo do painel 'Graduations'</p>
+  </div>
+  <div id="projects-content" style="display: none;">
+    <p>Este é o conteúdo do painel 'Projects'</p>
+  </div>
+  <div id="contact-me-content" style="display: none;">
+    <!-- Seu conteúdo de contato aqui -->
+  </div>
 
   <script>
     const panels = document.querySelectorAll('.panel')

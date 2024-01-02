@@ -5,10 +5,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+
     .background {
       background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
       background-size: cover;
       background-position: center;
+      background-size: cover;
+      border: 2px solid orangered;
+      border-radius: 10px;
     }
 
     .header {
@@ -62,6 +70,17 @@
       background: transparent;
     }
 
+    #content {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 1%;
+      border: 2px solid orangered;
+      border-radius: 10px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
     @media screen and (max-width: 600px) {
       .container {
         flex-direction: column;
@@ -73,6 +92,10 @@
 
       .header {
         font-size: 1.8em;
+      }
+
+      #content {
+        width: 100%;
       }
     }
 
@@ -133,7 +156,6 @@
     <p>Este é o conteúdo do painel 'Projects'</p>
   </div>
   <div id="contact-me-content" style="display: none;">
-    <!-- Seu conteúdo de contato aqui -->
   </div>
 
   <script>
@@ -147,6 +169,7 @@
         var panelName = panel.getAttribute('data-panel');
         var contentDiv = document.getElementById(panelName + '-content');
         document.getElementById('content').innerHTML = contentDiv.innerHTML;
+        document.getElementById('content').scrollIntoView({behavior: "smooth"});
       })
     })
 

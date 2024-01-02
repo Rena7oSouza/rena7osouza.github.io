@@ -16,6 +16,7 @@ panelsheader.forEach(panel => {
         document.getElementById('content').innerHTML = contentDiv.innerHTML;
         if (panelName == 'projects') {
             const panelsbody = document.querySelectorAll('.container-body .panel');
+            panelsbody[0].classList.add('active');
             panelsbody.forEach(panel => {
                 panel.addEventListener('click', () => {
                     removeActiveClasses(panelsbody);

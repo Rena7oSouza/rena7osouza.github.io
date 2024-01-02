@@ -105,6 +105,10 @@ body {
         margin-left: 0;
         text-align: center;
     }
+    .contact-me-img {
+        width: 10px;
+        height: 10px;
+    }
 }
 
 #title::after {

@@ -70,9 +70,10 @@
       .panel {
         margin: 5px 0;
       }
+
       .header {
-      font-size: 1.5em;
-    }
+        font-size: 1.8em;
+      }
     }
 
     #title::after {
@@ -121,7 +122,8 @@
       </div>
     </div>
   </div>
-  <div id="about-me-content" style="display:;">
+  <div id="content"></div>
+  <div id="about-me-content" style="display: none;">
     <p>Este é o conteúdo do painel 'About Me'</p>
   </div>
   <div id="graduations-content" style="display: none;">
@@ -141,6 +143,10 @@
       panel.addEventListener('click', () => {
         removeActiveClasses()
         panel.classList.add('active')
+
+        var panelName = panel.getAttribute('data-panel');
+        var contentDiv = document.getElementById(panelName + '-content');
+        document.getElementById('content').innerHTML = contentDiv.innerHTML;
       })
     })
 
@@ -171,29 +177,9 @@
     }
 
     setTimeout(typeWriter, 2000);
-    var panelContent = {
-      "About Me": "<p>Este é o conteúdo do painel 'About Me'</p>",
-      "Graduations": "<p>Este é o conteúdo do painel 'Graduations'</p>",
-      "Projects": "<p>Este é o conteúdo do painel 'Projects'</p>",
-      "Contact Me": "<div id='contact-me'> <h2>Entre em contato comigo</h2><p>Eu adoraria ouvir de você! Sinta-se à vontade para me enviar uma mensagem ou me seguir nas redes sociais:</p><ul><li><a href='https://www.facebook.com/seuusuario' target='_blank'><img src='caminho/para/o/icone/facebook.png' alt='Facebook' />Facebook</a></li><li><a href='https://www.twitter.com/seuusuario' target='_blank'><img src='caminho/para/o/icone/twitter.png' alt='Twitter' />Twitter</a></li><li><a href='https://www.linkedin.com/in/seuusuario' target='_blank'><img src='caminho/para/o/icone/linkedin.png' alt='LinkedIn' />LinkedIn</a></li><li><a href='https://www.instagram.com/seuusuario' target='_blank'><img src='caminho/para/o/icone/instagram.png' alt='Instagram' />Instagram</a></li></ul></div>"
-    };
-
-
-
-    // Adicione um event listener para cada painel
-    panels.forEach(panel => {
-      panel.addEventListener('click', () => {
-        removeActiveClasses();
-        panel.classList.add('active');
-        // Obtenha o título do painel
-        var panelTitle = panel.querySelector('h3').textContent;
-        // Use o título do painel para obter o conteúdo correspondente
-        var content = panelContent[panelTitle];
-        // Carregue o conteúdo no novo elemento
-        document.getElementById('content').innerHTML = content;
-      });
-    });
+    document.getElementById('content').innerHTML = document.getElementById('about-me-content').innerHTML;
   </script>
+
 </body>
 
 </html>

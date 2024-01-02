@@ -122,7 +122,7 @@ body {
     width: 200px;
     height: 200px;
     border: 2px solid orangered;
-    float: left; 
+    float: left;
     margin-right: 2%;
 }
 
@@ -131,6 +131,16 @@ body {
     flex-grow: 1;
 }
 
+.contact-me-img {
+    width: 50px;
+    height: 50px;
+}
+
+.contact-me-link {
+    display: flex;
+    align-items: center;
+    color: white;
+}
 
 @keyframes blink {
     0% {

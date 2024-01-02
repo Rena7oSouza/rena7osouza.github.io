@@ -74,42 +74,37 @@ body {
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 600px) {
-    .container {
-        flex-direction: column;
-    }
+#skills-content img {
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
 
-    .panel {
-        margin: 5px 0;
-    }
+hr {
+    width: 50%;
+    border: 1px solid orangered;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 1%;
+}
 
-    .header {
-        font-size: 1.6em;
-        margin-left: 5%;
-    }
+.skill-handler {
+    display: flex;
+    align-items: center;
+}
 
-    #content {
-        width: 100%;
-    }
+.skill-icon {
+    margin: 1%;
+    margin-left: 0;
+}
 
-    #about-me-content {
-        flex-direction: column;
-        align-items: center;
-    }
+.skill-title {
+    margin-bottom: 0;
+}
 
-    .about-me-img {
-        margin-bottom: 10px;
-    }
-
-    #about-me-content p {
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .contact-me-img {
-        width: 50px;
-        height: 50px;
-    }
+.skill-info {
+    width: 50%;
+    margin-top: 2%;
 }
 
 #title::after {
@@ -147,6 +142,59 @@ body {
     display: flex;
     align-items: center;
     color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .panel {
+        margin: 5px 0;
+    }
+
+    .header {
+        font-size: 1.6em;
+        margin-left: 5%;
+    }
+
+    #content {
+        width: 100%;
+    }
+
+    #about-me-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me-img {
+        margin-bottom: 10px;
+    }
+
+    #about-me-content p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .contact-me-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .skill-handler {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .skill-icon {
+        margin-top: 1%;
+    }
+
+    hr {
+        width: 50%;
+    }
 }
 
 @keyframes blink {

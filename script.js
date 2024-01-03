@@ -14,13 +14,20 @@ panelsheader.forEach(panel => {
         var panelName = panel.getAttribute('data-panel');
         var contentDiv = document.getElementById(panelName + '-content');
         document.getElementById('content').innerHTML = contentDiv.innerHTML;
-        if (panelName == 'projects' || panelName== 'graduations') {
+        if (panelName == 'projects' || panelName == 'certifications') {
             const panelsbody = document.querySelectorAll('.container-body .panel');
             panelsbody[0].classList.add('active');
+            var firstPanelName = panelsbody[0].getAttribute('data-panel');
+            var firstContentDiv = document.getElementById(firstPanelName + '-body-content');
+            document.getElementById('body-content').innerHTML = firstContentDiv.innerHTML;
             panelsbody.forEach(panel => {
                 panel.addEventListener('click', () => {
                     removeActiveClasses(panelsbody);
                     panel.classList.add('active');
+                    var panelName = panel.getAttribute('data-panel');
+                    var contentDiv = document.getElementById(panelName + '-body-content');
+                    document.getElementById('body-content').innerHTML = contentDiv.innerHTML;
+                    document.getElementById('body-content').scrollIntoView({ behavior: "smooth" });
                 });
             });
         }

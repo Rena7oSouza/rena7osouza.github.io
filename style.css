@@ -112,7 +112,7 @@ body {
     height: 5%;
 }
 
-hr {
+.my-line {
     width: 50%;
     border: 1px solid orangered;
     margin-left: 0;
@@ -177,6 +177,14 @@ hr {
     align-items: center;
     color: black;
     margin-top: 1%;
+}
+.graduation-card{
+    width: 50%;
+
+}
+.graduation-card-img{
+    height: 80%;
+    width: 80%;
 }
 @media screen and (max-width: 600px) {
     .container-body {
@@ -245,6 +253,9 @@ hr {
 
     hr {
         width: 50%;
+    }
+    .graduation-card{
+        width: 100%;
     }
 }
 

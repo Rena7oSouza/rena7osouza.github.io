@@ -9,6 +9,8 @@
   </style>
   <title>Renato Souza's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -50,6 +52,7 @@
   </div>
   <div id="certifications-content" style="display: none;">
     <div class="container-body">
+      <h1>Certifications</h1>
       <div class="panel active" data-panel="graduations"
         style="background-image: url('https://images.pexels.com/photos/7942430/pexels-photo-7942430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-color: white;">
         <h3>Graduations</h3>
@@ -61,13 +64,75 @@
     </div>
     <div id="body-content"></div>
     <div id="graduations-body-content" style="display: none;">
-      <ul>
-        <li>Postgraduate in DevOps by Anhanguera College (2023 - 2024) - In progress</li>
-        <li>Graduation in Administration by Anhanguera College (2023 - 2026) - In progress</li>
-        <li>Technologist in Digital Game Design by FACENS (2015 - 2017) – Completed</li>
-        <li>Physical Education Degree by Anhanguera College (2010 - 2013) - Completed</li>
-      </ul>
+      <h3>Graduations</h3>
+      <div class="my-line"></div>
+      <div class="card mb-3 graduation-card">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/396554829_720628913436190_4874987991645183328_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=KkdOf3QWnHkAX__QkEX&_nc_ht=scontent.fsod2-1.fna&oh=00_AfAcr_PwmHyP5TB8xVU5swq1aeVS9DR11TFkIVSbzRnv4Q&oe=6599C44D"
+              class="img-fluid rounded-start graduation-card-img">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Digital Game Design</h5>
+              <p class="card-text">Technologist in Digital Game Design by FACENS</p>
+              <p class="card-text"><small class="text-body-secondary">2015 - 2017</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 graduation-card">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/271384928_4574607625997926_6445024395372817855_n.png?_nc_cat=103&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=frQpo5tf-kkAX_nfWML&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCcvNBkhg4ea8Q-4EHDUEw3cgNvVR3PppAqeTMPiFz_vg&oe=659BAD06"
+              class="img-fluid rounded-start graduation-card-img">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Physical Education</h5>
+              <p class="card-text">Physical Education Degree by Anhanguera College</p>
+              <p class="card-text"><small class="text-body-secondary">2010 - 2013</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="card mb-3 graduation-card">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/271384928_4574607625997926_6445024395372817855_n.png?_nc_cat=103&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=frQpo5tf-kkAX_nfWML&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCcvNBkhg4ea8Q-4EHDUEw3cgNvVR3PppAqeTMPiFz_vg&oe=659BAD06"
+              class="img-fluid rounded-start graduation-card-img">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">DevOps</h5>
+              <p class="card-text">Postgraduate in DevOps by Anhanguera College</p>
+              <p class="card-text"><small class="text-body-secondary">2023 - 2024</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 graduation-card">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/271384928_4574607625997926_6445024395372817855_n.png?_nc_cat=103&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=frQpo5tf-kkAX_nfWML&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCcvNBkhg4ea8Q-4EHDUEw3cgNvVR3PppAqeTMPiFz_vg&oe=659BAD06"
+              class="img-fluid rounded-start graduation-card-img">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Administration</h5>
+              <p class="card-text">Graduation in Administration by Anhanguera College</p>
+              <p class="card-text"><small class="text-body-secondary">2023-2026</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="courses-body-content" style="display: none;">
       <h1>Complementary Courses</h1>
       <ul>
         <li>Web Programming with Python and JavaScript by EDX Harvard (2023) – In progress</li>
@@ -81,15 +146,12 @@
         <li>Assembly and Maintenance of Computers by SENAI (2011) - Completed</li>
       </ul>
     </div>
-    <div id="courses-body-content" style="display: none;">
-      <h3>My Courses Body content</h3>
-    </div>
   </div>
   <div id="skills-content" style="display: none;">
     <h1>Skills</h1>
     <div>
       <h3 class="skill-title">SO</h3>
-      <hr>
+      <div class="my-line"></div>
     </div>
     <div class="skill-handler">
       <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" />
@@ -98,7 +160,7 @@
     </div>
     <div>
       <h3 class="skill-title">Languages</h3>
-      <hr>
+      <div class="my-line"></div>
     </div>
     <div class="skill-handler">
       <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
@@ -116,7 +178,7 @@
     </div>
     <div>
       <h3 class="skill-title">Frameworks</h3>
-      <hr>
+      <div class="my-line"></div>
     </div>
     <div class="skill-handler">
       <img class="skill-icon"

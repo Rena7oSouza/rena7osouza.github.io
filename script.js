@@ -36,27 +36,30 @@ panelsheader.forEach(panel => {
 });
 
 
-
-const title = 'WELCOME TO MY PORTFOLIO';
+let titles = ['Hello, I\'m Renato Souza', 'Welcome to my portfolio!'];
 let i = 0;
+let titleIndex = 0;
 
 function typeWriter() {
-    if (i < title.length) {
-        document.getElementById('title').innerHTML += title.charAt(i);
+    if (i < titles[titleIndex].length) {
+        document.getElementById('title').innerHTML += titles[titleIndex].charAt(i);
         i++;
         setTimeout(typeWriter, 100);
     } else {
         document.getElementById('title').style.animation = 'none';
+        let delayBeforeNextTitle = titles[titleIndex] === 'Hello, I\'m Renato Souza' ? 0 : 2000;
         setTimeout(() => {
             document.getElementById('title').innerHTML = '';
             document.getElementById('title').style.animation = '';
             i = 0;
+            titleIndex = (titleIndex + 1) % titles.length;
             let newTitle = document.getElementById('title').cloneNode(true);
             document.getElementById('title').parentNode.replaceChild(newTitle, document.getElementById('title'));
-            setTimeout(typeWriter, 2000);
+            setTimeout(typeWriter, delayBeforeNextTitle);
         }, 3000);
     }
 }
 
 setTimeout(typeWriter, 2000);
+
 document.getElementById('content').innerHTML = document.getElementById('about-me-content').innerHTML;

@@ -33,7 +33,7 @@ body {
 
 .panel {
     background-size: cover;
-    background-position:center;
+    background-position: center;
     height: 200px;
     width: 20%;
     border-radius: 10px;
@@ -58,7 +58,8 @@ body {
     height: 100px;
     width: 50%;
 }
-.container-body .panel h3{
+
+.container-body .panel h3 {
     font-size: 2em;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -185,6 +186,11 @@ hr {
         width: 100%;
     }
 
+    .container-body .panel {
+        margin: 5px 0;
+        width: 100%;
+    }
+
     .header {
         font-size: 1.6em;
         margin-left: 5%;
@@ -222,6 +228,8 @@ hr {
 
     .skill-icon {
         margin-top: 1%;
+        width: 50px;
+        height: 50px;
     }
 
     hr {

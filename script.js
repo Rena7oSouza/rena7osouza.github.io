@@ -14,7 +14,7 @@ panelsheader.forEach(panel => {
         var panelName = panel.getAttribute('data-panel');
         var contentDiv = document.getElementById(panelName + '-content');
         document.getElementById('content').innerHTML = contentDiv.innerHTML;
-        if (panelName == 'projects') {
+        if (panelName == 'projects' || panelName== 'graduations') {
             const panelsbody = document.querySelectorAll('.container-body .panel');
             panelsbody[0].classList.add('active');
             panelsbody.forEach(panel => {

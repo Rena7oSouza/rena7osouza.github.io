@@ -63,3 +63,4 @@ function typeWriter() {
 setTimeout(typeWriter, 2000);
 
 document.getElementById('content').innerHTML = document.getElementById('about-me-content').innerHTML;
+

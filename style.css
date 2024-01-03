@@ -33,6 +33,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 200px;
+    width: 20%;
     border-radius: 10px;
     cursor: pointer;
     flex: 0.5;
@@ -147,12 +148,16 @@ hr {
 }
 
 @media screen and (max-width: 600px) {
-    .container {
+    .container-body {
+        flex-direction: column;
+    }
+    .container-header {
         flex-direction: column;
     }
 
     .panel {
         margin: 5px 0;
+        width: 100%;
     }
 
     .header {

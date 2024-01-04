@@ -213,16 +213,14 @@ body {
     margin-top: 1%;
 }
 
-.graduation-card-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
+
+
 
 .responsive-iframe {
     position: relative;
     overflow: hidden;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
 }
 
 .responsive-iframe iframe {
@@ -231,6 +229,10 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.card-body {
+    min-height: 300px;
 }
 
 @media screen and (max-width: 600px) {

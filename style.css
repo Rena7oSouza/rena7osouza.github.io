@@ -306,13 +306,6 @@ body {
         width: 50%;
     }
 
-    .graduation-card {
-        height: 10%;
-    }
-
-    .graduation-card-img {
-        width: 20%;
-    }
 }
 
 @keyframes blink {

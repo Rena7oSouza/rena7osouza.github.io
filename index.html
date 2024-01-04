@@ -14,399 +14,407 @@
 </head>
 
 <body>
-  <div class="background">
-    <div class="header">
-      <h1 id="title"></h1>
-    </div>
-  </div>
-  <div class="container-header">
-    <div class="panel active" data-panel="about-me"
-      style="background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
-      <h3>About Me</h3>
-    </div>
-    <div class="panel" data-panel="certifications"
-      style="background-image: url('https://images.pexels.com/photos/7944061/pexels-photo-7944061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
-      <h3>Certifications</h3>
-    </div>
-    <div class="panel" data-panel="skills"
-      style="background-image: url('https://images.pexels.com/photos/614117/pexels-photo-614117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
-      <h3>Skills</h3>
-    </div>
-    <div class="panel" data-panel="projects"
-      style="background-image: url('https://images.pexels.com/photos/7439134/pexels-photo-7439134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
-      <h3>Projects</h3>
-    </div>
-    <div class="panel" data-panel="contact-me"
-      style="background-image: url('https://images.pexels.com/photos/326576/pexels-photo-326576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
-      <h3>Contact Me</h3>
-    </div>
-  </div>
-  <div id="content"></div>
-  <div id="about-me-content" style="display: none;">
-    <img class="about-me-img"
-      src='https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
-      alt="Sua Foto">
-    <div>
-      <h1>About Me</h1>
-    </div>
-  </div>
-  <div id="certifications-content" style="display: none;">
-    <h2>Certifications</h2>
-    <div class="container-body">
-      <div class="panel active" data-panel="graduations"
-        style="background-image: url('https://images.pexels.com/photos/7942430/pexels-photo-7942430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-color: white;">
-        <h3>Graduations</h3>
-      </div>
-      <div class="panel" data-panel="courses"
-        style="background-image: url('https://images.pexels.com/photos/5905439/pexels-photo-5905439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); padding-left:0.3%;    background-position:bottom;">
-        <h3>Courses</h3>
+  <div class="loading-text">0%</div>
+  <div class="loading-bg">
+    <div class="background">
+      <div class="header">
+        <h1 id="title"></h1>
       </div>
     </div>
-    <br><h2>Graduations</h2>
-    <div id="body-content"></div>
-    <div id="graduations-body-content" style="display: none;">
-      <br><h3 class="content-subtitle">Completed</h3>
-      <div class="my-line"></div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/396554829_720628913436190_4874987991645183328_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=KkdOf3QWnHkAX__QkEX&_nc_ht=scontent.fsod2-1.fna&oh=00_AfAcr_PwmHyP5TB8xVU5swq1aeVS9DR11TFkIVSbzRnv4Q&oe=6599C44D"
-                  class="img-fluid rounded-start graduation-card-img">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h3 class="card-title">Digital Game Design</h3>
-                  <h4 class="card-text">Technologist in Digital Game Design by FACENS</h4>
-                  <h5 class="card-text text-body-secondary">2015 - 2017</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/391708139_700544175444045_3192366584345460721_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeG1BYdxh0YuZwl96An3uH2mOqa2a6gYCGo6prZrqBgIatfhQwSY-3Bhqts4S--gEvV7ZiLOVZjEkVaKZKc0LvRr&_nc_ohc=PR8-_CVLSN8AX8JyjI5&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCWFGerFuGNeE8TPg2L1IrS3eBUURNpS6bDefi3XuyEkQ&oe=659BF26B"
-                  class="img-fluid rounded-start graduation-card-img">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h3 class="card-title">Physical Education</h3>
-                  <h4 class="card-text">Physical Education Degree by Anhanguera College</h4>
-                  <h5 class="card-text text-body-secondary">2010 - 2013</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="container-header">
+      <div class="panel active" data-panel="about-me"
+        style="background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
+        <h3>About Me</h3>
       </div>
-      <br><br><h3 class="content-subtitle">Studying</h3>
-      <div class="my-line"></div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/391708139_700544175444045_3192366584345460721_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeG1BYdxh0YuZwl96An3uH2mOqa2a6gYCGo6prZrqBgIatfhQwSY-3Bhqts4S--gEvV7ZiLOVZjEkVaKZKc0LvRr&_nc_ohc=PR8-_CVLSN8AX8JyjI5&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCWFGerFuGNeE8TPg2L1IrS3eBUURNpS6bDefi3XuyEkQ&oe=659BF26B"
-                  class="img-fluid rounded-start graduation-card-img">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h3 class="card-title">DevOps</h3>
-                  <h4 class="card-text">Postgraduate in DevOps by Anhanguera College</h4>
-                  <h5 class="card-text text-body-secondary">2023 - 2024</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/391708139_700544175444045_3192366584345460721_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeG1BYdxh0YuZwl96An3uH2mOqa2a6gYCGo6prZrqBgIatfhQwSY-3Bhqts4S--gEvV7ZiLOVZjEkVaKZKc0LvRr&_nc_ohc=PR8-_CVLSN8AX8JyjI5&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCWFGerFuGNeE8TPg2L1IrS3eBUURNpS6bDefi3XuyEkQ&oe=659BF26B"
-                  class="img-fluid rounded-start graduation-card-img">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h3 class="card-title">Administration</h3>
-                  <h4 class="card-text">Graduation in Administration by Anhanguera College</h4>
-                  <h5 class="card-text text-body-secondary">2023-2026</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="panel" data-panel="certifications"
+        style="background-image: url('https://images.pexels.com/photos/7944061/pexels-photo-7944061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+        <h3>Certifications</h3>
+      </div>
+      <div class="panel" data-panel="skills"
+        style="background-image: url('https://images.pexels.com/photos/614117/pexels-photo-614117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+        <h3>Skills</h3>
+      </div>
+      <div class="panel" data-panel="projects"
+        style="background-image: url('https://images.pexels.com/photos/7439134/pexels-photo-7439134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+        <h3>Projects</h3>
+      </div>
+      <div class="panel" data-panel="contact-me"
+        style="background-image: url('https://images.pexels.com/photos/326576/pexels-photo-326576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+        <h3>Contact Me</h3>
       </div>
     </div>
-    <div id="courses-body-content" style="display: none;">
-      <br><h3 class="content-subtitle">Completed</h3>
-      <div class="my-line"></div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/356852103_647300394105054_4031791278935114061_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeFK9wCSQqfBXyZ2UNbreWXYXWHXS2gMZ0FdYddLaAxnQRNukeHUm3L8gLVG9HwlXqAPbOIl_pSkdwEpFGtsRvkx&_nc_ohc=yMO0WJ3vGwIAX8e3j0X&_nc_ht=scontent.fsod2-1.fna&oh=00_AfAmRposgAqllijiovU73NH57AxOnWmkeOY-0zIyw7cv_g&oe=659AA0C0"
-                  class="img-fluid rounded-start graduation-card-img">
+    <div id="content"></div>
+    <div id="about-me-content" style="display: none;">
+      <img class="about-me-img"
+        src='https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
+        alt="Sua Foto">
+      <div>
+        <h1>About Me</h1>
+      </div>
+    </div>
+    <div id="certifications-content" style="display: none;">
+      <h2>Certifications</h2>
+      <div class="container-body">
+        <div class="panel active" data-panel="graduations"
+          style="background-image: url('https://images.pexels.com/photos/7942430/pexels-photo-7942430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-color: white;">
+          <h3>Graduations</h3>
+        </div>
+        <div class="panel" data-panel="courses"
+          style="background-image: url('https://images.pexels.com/photos/5905439/pexels-photo-5905439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); padding-left:0.3%;    background-position:bottom;">
+          <h3>Courses</h3>
+        </div>
+      </div>
+      <br>
+      <h2>Graduations</h2>
+      <div id="body-content"></div>
+      <div id="graduations-body-content" style="display: none;">
+        <br>
+        <h3 class="content-subtitle">Completed</h3>
+        <div class="my-line"></div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/396554829_720628913436190_4874987991645183328_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=KkdOf3QWnHkAX__QkEX&_nc_ht=scontent.fsod2-1.fna&oh=00_AfAcr_PwmHyP5TB8xVU5swq1aeVS9DR11TFkIVSbzRnv4Q&oe=6599C44D"
+                    class="img-fluid rounded-start graduation-card-img">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title">Digital Game Design</h3>
+                    <h4 class="card-text">Technologist in Digital Game Design by FACENS</h4>
+                    <h5 class="card-text text-body-secondary">2015 - 2017</h5>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h3 class="card-title">Python</h3>
-                  <h4 class="card-text">Introduction to Programming in Python by EDX Harvard</h4>
-                  <h5 class="card-text text-body-secondary">2023</h5>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/391708139_700544175444045_3192366584345460721_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeG1BYdxh0YuZwl96An3uH2mOqa2a6gYCGo6prZrqBgIatfhQwSY-3Bhqts4S--gEvV7ZiLOVZjEkVaKZKc0LvRr&_nc_ohc=PR8-_CVLSN8AX8JyjI5&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCWFGerFuGNeE8TPg2L1IrS3eBUURNpS6bDefi3XuyEkQ&oe=659BF26B"
+                    class="img-fluid rounded-start graduation-card-img">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title">Physical Education</h3>
+                    <h4 class="card-text">Physical Education Degree by Anhanguera College</h4>
+                    <h5 class="card-text text-body-secondary">2010 - 2013</h5>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/391708139_700544175444045_3192366584345460721_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeG1BYdxh0YuZwl96An3uH2mOqa2a6gYCGo6prZrqBgIatfhQwSY-3Bhqts4S--gEvV7ZiLOVZjEkVaKZKc0LvRr&_nc_ohc=PR8-_CVLSN8AX8JyjI5&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCWFGerFuGNeE8TPg2L1IrS3eBUURNpS6bDefi3XuyEkQ&oe=659BF26B"
-                  class="img-fluid rounded-start graduation-card-img">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h3 class="card-title">Python</h3>
-                  <h4 class="card-text">Introduction to Python Language by Anhanguera</h4>
-                  <h5 class="card-text text-body-secondary">2023</h5>
+        <br><br>
+        <h3 class="content-subtitle">Studying</h3>
+        <div class="my-line"></div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/391708139_700544175444045_3192366584345460721_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeG1BYdxh0YuZwl96An3uH2mOqa2a6gYCGo6prZrqBgIatfhQwSY-3Bhqts4S--gEvV7ZiLOVZjEkVaKZKc0LvRr&_nc_ohc=PR8-_CVLSN8AX8JyjI5&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCWFGerFuGNeE8TPg2L1IrS3eBUURNpS6bDefi3XuyEkQ&oe=659BF26B"
+                    class="img-fluid rounded-start graduation-card-img">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title">DevOps</h3>
+                    <h4 class="card-text">Postgraduate in DevOps by Anhanguera College</h4>
+                    <h5 class="card-text text-body-secondary">2023 - 2024</h5>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/391708139_700544175444045_3192366584345460721_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeG1BYdxh0YuZwl96An3uH2mOqa2a6gYCGo6prZrqBgIatfhQwSY-3Bhqts4S--gEvV7ZiLOVZjEkVaKZKc0LvRr&_nc_ohc=PR8-_CVLSN8AX8JyjI5&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCWFGerFuGNeE8TPg2L1IrS3eBUURNpS6bDefi3XuyEkQ&oe=659BF26B"
-                  class="img-fluid rounded-start graduation-card-img">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h3 class="card-title">Python</h3>
-                  <h4 class="card-text">Introduction to Data Analysis with Python by Anhanguera</h4>
-                  <h5 class="card-text text-body-secondary">2023</h5>
+          <div class="col-md-6">
+            <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/391708139_700544175444045_3192366584345460721_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeG1BYdxh0YuZwl96An3uH2mOqa2a6gYCGo6prZrqBgIatfhQwSY-3Bhqts4S--gEvV7ZiLOVZjEkVaKZKc0LvRr&_nc_ohc=PR8-_CVLSN8AX8JyjI5&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCWFGerFuGNeE8TPg2L1IrS3eBUURNpS6bDefi3XuyEkQ&oe=659BF26B"
+                    class="img-fluid rounded-start graduation-card-img">
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/391708139_700544175444045_3192366584345460721_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeG1BYdxh0YuZwl96An3uH2mOqa2a6gYCGo6prZrqBgIatfhQwSY-3Bhqts4S--gEvV7ZiLOVZjEkVaKZKc0LvRr&_nc_ohc=PR8-_CVLSN8AX8JyjI5&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCWFGerFuGNeE8TPg2L1IrS3eBUURNpS6bDefi3XuyEkQ&oe=659BF26B"
-                  class="img-fluid rounded-start graduation-card-img">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h3 class="card-title">Python</h3>
-                  <h4 class="card-text">Data Structures in Python by Anhanguera</h4>
-                  <h5 class="card-text text-body-secondary">2023</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/416223803_719652430269811_7752775662508562907_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEfY-cwP63Z8ZEeE1LvRPZqMQo3N541aysxCjc3njVrK9QpBiGRSlKetzHYwv9-GHYHn3Chhm_DRtOPJCdXUC6P&_nc_ohc=qZPzmn3Vbg8AX-n5I0i&_nc_ht=scontent.fsod2-1.fna&oh=00_AfDww0gGspEDz9iodzf0Eu0jPMFVr4iOTbs-8qsjt-jHkA&oe=659C4451"
-                  class="img-fluid rounded-start graduation-card-img">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h3 class="card-title">IT</h3>
-                  <h4 class="card-text">Information Technology Technical Course by SENAC</h4>
-                  <h5 class="card-text text-body-secondary">2015</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/328288886_1205068916772472_3498112728475517139_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeHtQRZL36IF_SVholNe7QvwSVVC9nGZyWxJVUL2cZnJbL6iy7IJsQQg8FvbzrbtKcv07E5MeReE1VAlKhfxEFut&_nc_ohc=qvYcSdlGQ6IAX-C9BPK&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCP44z93SvdOjIWh5apUhd1M-Mr13Z5XtiGFDEkTEQL4w&oe=659BB33D"
-                  class="img-fluid rounded-start graduation-card-img">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h3 class="card-title">IT</h3>
-                  <h4 class="card-text">Information Technology by Microcamp</h4>
-                  <h5 class="card-text text-body-secondary">2014</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/399690041_742604967894431_2942842708267123633_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEtR-lKeCzWEwfb_44AjwhY-C3_IZi2rir4Lf8hmLauKuikueqKSk0p7zHjOYRGNBXtsHf9kZYx46AALAh0SwJg&_nc_ohc=jpwU_bFu24AAX9tzWUd&_nc_ht=scontent.fsod2-1.fna&oh=00_AfBaPyP9mHPUBtWlZkkg_imhKg3-_DTXMGPEFFbwxGgcIg&oe=659B53F5" 
-                  class="img-fluid rounded-start graduation-card-img">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h3 class="card-title">Excel</h3>
-                  <h4 class="card-text">Advanced Excel by Pitágoras College</h4>
-                  <h5 class="card-text text-body-secondary">2013</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/327236885_419485463699209_6662801759029961903_n.png?_nc_cat=110&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeE81kqZrrlOTokj0kiUzhgpya2PN20P_x_JrY83bQ__H9mgMxYNWb6pzKXAwp522__Zj14ynYz0fVvYXkZgz7cJ&_nc_ohc=xm6mnRW7o0YAX8fRbh6&_nc_ht=scontent.fsod2-1.fna&oh=00_AfB8OIHab4_oEV-DfQk06cBLTdYBx6xshnQt6u1Ly1l11A&oe=659C5002"
-                  class="img-fluid rounded-start graduation-card-img">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h3 class="card-title">Assembly and Maintenance</h3>
-                  <h4 class="card-text">Assembly and Maintenance of Computers by SENAI</h4>
-                  <h5 class="card-text text-body-secondary">2011</h5>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title">Administration</h3>
+                    <h4 class="card-text">Graduation in Administration by Anhanguera College</h4>
+                    <h5 class="card-text text-body-secondary">2023-2026</h5>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div id="courses-body-content" style="display: none;">
+        <br>
+        <h3 class="content-subtitle">Completed</h3>
+        <div class="my-line"></div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/356852103_647300394105054_4031791278935114061_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeFK9wCSQqfBXyZ2UNbreWXYXWHXS2gMZ0FdYddLaAxnQRNukeHUm3L8gLVG9HwlXqAPbOIl_pSkdwEpFGtsRvkx&_nc_ohc=yMO0WJ3vGwIAX8e3j0X&_nc_ht=scontent.fsod2-1.fna&oh=00_AfAmRposgAqllijiovU73NH57AxOnWmkeOY-0zIyw7cv_g&oe=659AA0C0"
+                    class="img-fluid rounded-start graduation-card-img">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title">Python</h3>
+                    <h4 class="card-text">Introduction to Programming in Python by EDX Harvard</h4>
+                    <h5 class="card-text text-body-secondary">2023</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/391708139_700544175444045_3192366584345460721_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeG1BYdxh0YuZwl96An3uH2mOqa2a6gYCGo6prZrqBgIatfhQwSY-3Bhqts4S--gEvV7ZiLOVZjEkVaKZKc0LvRr&_nc_ohc=PR8-_CVLSN8AX8JyjI5&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCWFGerFuGNeE8TPg2L1IrS3eBUURNpS6bDefi3XuyEkQ&oe=659BF26B"
+                    class="img-fluid rounded-start graduation-card-img">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title">Python</h3>
+                    <h4 class="card-text">Introduction to Python Language by Anhanguera</h4>
+                    <h5 class="card-text text-body-secondary">2023</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/391708139_700544175444045_3192366584345460721_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeG1BYdxh0YuZwl96An3uH2mOqa2a6gYCGo6prZrqBgIatfhQwSY-3Bhqts4S--gEvV7ZiLOVZjEkVaKZKc0LvRr&_nc_ohc=PR8-_CVLSN8AX8JyjI5&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCWFGerFuGNeE8TPg2L1IrS3eBUURNpS6bDefi3XuyEkQ&oe=659BF26B"
+                    class="img-fluid rounded-start graduation-card-img">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title">Python</h3>
+                    <h4 class="card-text">Introduction to Data Analysis with Python by Anhanguera</h4>
+                    <h5 class="card-text text-body-secondary">2023</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/391708139_700544175444045_3192366584345460721_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeG1BYdxh0YuZwl96An3uH2mOqa2a6gYCGo6prZrqBgIatfhQwSY-3Bhqts4S--gEvV7ZiLOVZjEkVaKZKc0LvRr&_nc_ohc=PR8-_CVLSN8AX8JyjI5&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCWFGerFuGNeE8TPg2L1IrS3eBUURNpS6bDefi3XuyEkQ&oe=659BF26B"
+                    class="img-fluid rounded-start graduation-card-img">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title">Python</h3>
+                    <h4 class="card-text">Data Structures in Python by Anhanguera</h4>
+                    <h5 class="card-text text-body-secondary">2023</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/416223803_719652430269811_7752775662508562907_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEfY-cwP63Z8ZEeE1LvRPZqMQo3N541aysxCjc3njVrK9QpBiGRSlKetzHYwv9-GHYHn3Chhm_DRtOPJCdXUC6P&_nc_ohc=qZPzmn3Vbg8AX-n5I0i&_nc_ht=scontent.fsod2-1.fna&oh=00_AfDww0gGspEDz9iodzf0Eu0jPMFVr4iOTbs-8qsjt-jHkA&oe=659C4451"
+                    class="img-fluid rounded-start graduation-card-img">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title">IT</h3>
+                    <h4 class="card-text">Information Technology Technical Course by SENAC</h4>
+                    <h5 class="card-text text-body-secondary">2015</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/328288886_1205068916772472_3498112728475517139_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeHtQRZL36IF_SVholNe7QvwSVVC9nGZyWxJVUL2cZnJbL6iy7IJsQQg8FvbzrbtKcv07E5MeReE1VAlKhfxEFut&_nc_ohc=qvYcSdlGQ6IAX-C9BPK&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCP44z93SvdOjIWh5apUhd1M-Mr13Z5XtiGFDEkTEQL4w&oe=659BB33D"
+                    class="img-fluid rounded-start graduation-card-img">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title">IT</h3>
+                    <h4 class="card-text">Information Technology by Microcamp</h4>
+                    <h5 class="card-text text-body-secondary">2014</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/399690041_742604967894431_2942842708267123633_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEtR-lKeCzWEwfb_44AjwhY-C3_IZi2rir4Lf8hmLauKuikueqKSk0p7zHjOYRGNBXtsHf9kZYx46AALAh0SwJg&_nc_ohc=jpwU_bFu24AAX9tzWUd&_nc_ht=scontent.fsod2-1.fna&oh=00_AfBaPyP9mHPUBtWlZkkg_imhKg3-_DTXMGPEFFbwxGgcIg&oe=659B53F5"
+                    class="img-fluid rounded-start graduation-card-img">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title">Excel</h3>
+                    <h4 class="card-text">Advanced Excel by Pitágoras College</h4>
+                    <h5 class="card-text text-body-secondary">2013</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-3 graduation-card" style="border: orangered solid 2px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/327236885_419485463699209_6662801759029961903_n.png?_nc_cat=110&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeE81kqZrrlOTokj0kiUzhgpya2PN20P_x_JrY83bQ__H9mgMxYNWb6pzKXAwp522__Zj14ynYz0fVvYXkZgz7cJ&_nc_ohc=xm6mnRW7o0YAX8fRbh6&_nc_ht=scontent.fsod2-1.fna&oh=00_AfB8OIHab4_oEV-DfQk06cBLTdYBx6xshnQt6u1Ly1l11A&oe=659C5002"
+                    class="img-fluid rounded-start graduation-card-img">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title">Assembly and Maintenance</h3>
+                    <h4 class="card-text">Assembly and Maintenance of Computers by SENAI</h4>
+                    <h5 class="card-text text-body-secondary">2011</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div id="skills-content" style="display: none;">
-    <h1>Skills</h1>
-    <div>
-      <h3 class="content-subtitle">SO</h3>
-      <div class="my-line"></div>
-    </div>
-    <div class="skill-handler">
-      <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" />
-      <img class="skill-icon"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain-wordmark.svg" />
-    </div>
-    <div>
-      <h3 class="skill-title">Languages</h3>
-      <div class="my-line"></div>
-    </div>
-    <div class="skill-handler">
-      <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
-      <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
-      <img class="skill-icon"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
-      <img class="skill-icon"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
-      <img class="skill-icon"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
-      <img class="skill-icon"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
-      <img class="skill-icon"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-    </div>
-    <div>
-      <h3 class="skill-title">Frameworks</h3>
-      <div class="my-line"></div>
-    </div>
-    <div class="skill-handler">
-      <img class="skill-icon"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg" />
-      <img class="skill-icon"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" />
-      <img class="skill-icon"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" />
-      <img class="skill-icon"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
-      <img class="skill-icon"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original-wordmark.svg" />
-      <img class="skill-icon"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original-wordmark.svg" />
+    <div id="skills-content" style="display: none;">
+      <h1>Skills</h1>
+      <div>
+        <h3 class="content-subtitle">SO</h3>
+        <div class="my-line"></div>
+      </div>
+      <div class="skill-handler">
+        <img class="skill-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" />
+        <img class="skill-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain-wordmark.svg" />
+      </div>
+      <div>
+        <h3 class="skill-title">Languages</h3>
+        <div class="my-line"></div>
+      </div>
+      <div class="skill-handler">
+        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
+        <img class="skill-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
+        <img class="skill-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+        <img class="skill-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+        <img class="skill-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+        <img class="skill-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+      </div>
+      <div>
+        <h3 class="skill-title">Frameworks</h3>
+        <div class="my-line"></div>
+      </div>
+      <div class="skill-handler">
+        <img class="skill-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg" />
+        <img class="skill-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" />
+        <img class="skill-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" />
+        <img class="skill-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+        <img class="skill-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original-wordmark.svg" />
+        <img class="skill-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original-wordmark.svg" />
 
-    </div>
-    <img class="skill-info"
-      src="https://camo.githubusercontent.com/beb552439a5cc21b7114c18614a115ed6c3550d0883e7d87e7f7b7727628be6e/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67732f3f757365726e616d653d72656e61376f736f757a61266c61796f75743d6e6f726d616c267468656d653d64726163756c61">
-  </div>
-  <div id="projects-content" style="display: none;">
-    <div class="container-body">
-      <div class="panel active" data-panel="html-css"
-        style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg'); background-color: white;">
-        <h3>HTML/CSS</h3>
       </div>
-      <div class="panel" data-panel="javascript"
-        style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg'); padding-left:0.3%;    background-position:bottom;">
-        <h3>Javascript</h3>
+      <img class="skill-info"
+        src="https://camo.githubusercontent.com/beb552439a5cc21b7114c18614a115ed6c3550d0883e7d87e7f7b7727628be6e/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67732f3f757365726e616d653d72656e61376f736f757a61266c61796f75743d6e6f726d616c267468656d653d64726163756c61">
+    </div>
+    <div id="projects-content" style="display: none;">
+      <div class="container-body">
+        <div class="panel active" data-panel="html-css"
+          style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg'); background-color: white;">
+          <h3>HTML/CSS</h3>
+        </div>
+        <div class="panel" data-panel="javascript"
+          style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg'); padding-left:0.3%;    background-position:bottom;">
+          <h3>Javascript</h3>
+        </div>
+        <div class="panel" data-panel="py"
+          style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png'); background-color: white;">
+          <h3>Python</h3>
+        </div>
+        <div class="panel" data-panel="unity"
+          style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Unity_2021.svg/2560px-Unity_2021.svg.png'); background-color: white;">
+          <h3>Unity</h3>
+        </div>
       </div>
-      <div class="panel" data-panel="py"
-        style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png'); background-color: white;">
-        <h3>Python</h3>
+      <div id="body-content"></div>
+      <div id="html-css-body-content" style="display: none;">
+        <h3>My HTML CSS Body content</h3>
       </div>
-      <div class="panel" data-panel="unity"
-        style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Unity_2021.svg/2560px-Unity_2021.svg.png'); background-color: white;">
-        <h3>Unity</h3>
+      <div id="javascript-body-content" style="display: none;">
+        <h3>My JS Body content</h3>
+      </div>
+      <div id="py-body-content" style="display: none;">
+        <h3>My PY Body content</h3>
+      </div>
+      <div id="unity-body-content" style="display: none;">
+        <h3>My Unity CSS Body content</h3>
       </div>
     </div>
-    <div id="body-content"></div>
-    <div id="html-css-body-content" style="display: none;">
-      <h3>My HTML CSS Body content</h3>
+    <div id="contact-me-content" style="display: none;">
+      <h1>Contact Me</h1>
+      <a href="https://www.facebook.com/profile.php?id=100014747314511" target="_blank" class="contact-me-link">
+        <img class="contact-me-img"
+          src="https://play-lh.googleusercontent.com/KCMTYuiTrKom4Vyf0G4foetVOwhKWzNbHWumV73IXexAIy5TTgZipL52WTt8ICL-oIo=w240-h480"
+          alt="Facebook" />Facebook</a>
+      <a href="https://www.instagram.com/rena7osouza/" target="_blank" class="contact-me-link">
+        <img class="contact-me-img"
+          src="https://play-lh.googleusercontent.com/VRMWkE5p3CkWhJs6nv-9ZsLAs1QOg5ob1_3qg-rckwYW7yp1fMrYZqnEFpk0IoVP4LM=w240-h480"
+          alt="Instagram" />Instagram</a>
+      <a href="https://www.linkedin.com/in/renatosouzadeoliveira/" target="_blank" class="contact-me-link">
+        <img class="contact-me-img"
+          src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw=w240-h480"
+          alt="LinkedIn" />LinkedIn</a>
+      <a href="https://www.youtube.com/channel/UCQUISwhkcRDmu0nYALkt1nw" target="_blank" class="contact-me-link">
+        <img class="contact-me-img"
+          src="https://play-lh.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc=s48"
+          alt="Youtube" />Youtube</a>
+      <a href="https://github.com/Rena7oSouza" target="_blank" class="contact-me-link">
+        <img class="contact-me-img" style="background-color: white;"
+          src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU=s48"
+          alt="Github" />Github</a>
+      <a href="mailto:renatofrancisco@hotmail.com" target="_blank" class="contact-me-link">
+        <img class="contact-me-img"
+          src="https://play-lh.googleusercontent.com/DSMBLC-yGuWCdMYzqpNio-brFDS4Th6ERZcmilckYtU9tXqEqMEetwC9JCQoJSLVGF4=w240-h480"
+          alt="Email" />renatofrancisco@hotmail.com</a>
     </div>
-    <div id="javascript-body-content" style="display: none;">
-      <h3>My JS Body content</h3>
-    </div>
-    <div id="py-body-content" style="display: none;">
-      <h3>My PY Body content</h3>
-    </div>
-    <div id="unity-body-content" style="display: none;">
-      <h3>My Unity CSS Body content</h3>
-    </div>
-  </div>
-  <div id="contact-me-content" style="display: none;">
-    <h1>Contact Me</h1>
-    <a href="https://www.facebook.com/profile.php?id=100014747314511" target="_blank" class="contact-me-link">
-      <img class="contact-me-img"
-        src="https://play-lh.googleusercontent.com/KCMTYuiTrKom4Vyf0G4foetVOwhKWzNbHWumV73IXexAIy5TTgZipL52WTt8ICL-oIo=w240-h480"
-        alt="Facebook" />Facebook</a>
-    <a href="https://www.instagram.com/rena7osouza/" target="_blank" class="contact-me-link">
-      <img class="contact-me-img"
-        src="https://play-lh.googleusercontent.com/VRMWkE5p3CkWhJs6nv-9ZsLAs1QOg5ob1_3qg-rckwYW7yp1fMrYZqnEFpk0IoVP4LM=w240-h480"
-        alt="Instagram" />Instagram</a>
-    <a href="https://www.linkedin.com/in/renatosouzadeoliveira/" target="_blank" class="contact-me-link">
-      <img class="contact-me-img"
-        src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw=w240-h480"
-        alt="LinkedIn" />LinkedIn</a>
-    <a href="https://www.youtube.com/channel/UCQUISwhkcRDmu0nYALkt1nw" target="_blank" class="contact-me-link">
-      <img class="contact-me-img"
-        src="https://play-lh.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc=s48"
-        alt="Youtube" />Youtube</a>
-    <a href="https://github.com/Rena7oSouza" target="_blank" class="contact-me-link">
-      <img class="contact-me-img" style="background-color: white;"
-        src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU=s48"
-        alt="Github" />Github</a>
-    <a href="mailto:renatofrancisco@hotmail.com" target="_blank" class="contact-me-link">
-      <img class="contact-me-img"
-        src="https://play-lh.googleusercontent.com/DSMBLC-yGuWCdMYzqpNio-brFDS4Th6ERZcmilckYtU9tXqEqMEetwC9JCQoJSLVGF4=w240-h480"
-        alt="Email" />renatofrancisco@hotmail.com</a>
   </div>
   <script src="script.js"></script>
 </body>

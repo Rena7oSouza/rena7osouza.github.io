@@ -4,91 +4,137 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-
-  </style>
-  <title>Renato Souza's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <title>Renato Souza's Portfolio</title>
 </head>
 
 <body>
-  <div class="loading-text">0%</div>
-  <div class="loading-bg">
-    <div class="background">
-      <div class="header">
-        <h1 id="title"></h1>
-      </div>
-    </div>
-    <div class="container-header">
-      <div class="panel active" data-panel="about-me"
-        style="background-image: url(image.jpg); background-position:center 15%;" >
-        <h3>About Me</h3>
-      </div>
-      <div class="panel" data-panel="certifications"
-        style="background-image: url('https://images.pexels.com/photos/7944061/pexels-photo-7944061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
-        <h3>Certifications</h3>
-      </div>
-      <div class="panel" data-panel="skills"
-        style="background-image: url('https://images.pexels.com/photos/614117/pexels-photo-614117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
-        <h3>Skills</h3>
-      </div>
-      <div class="panel" data-panel="projects"
-        style="background-image: url('https://images.pexels.com/photos/7439134/pexels-photo-7439134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
-        <h3>Projects</h3>
-      </div>
-      <div class="panel" data-panel="contact-me"
-        style="background-image: url('https://images.pexels.com/photos/326576/pexels-photo-326576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
-        <h3>Contact Me</h3>
-      </div>
-    </div>
-    <div id="content"></div>
-    <div id="about-me-content" style="display: none;">
-      <img class="about-me-img"
-        src='image.jpg'
-        alt="Sua Foto">
-      <div>
-        <h1>About Me</h1>
-        <p>Hello, I am Renato Francisco Souza de Oliveira, a professional passionate about technology and innovation. I
-          have a degree in Physical Education, Digital Game Design, and I am studying Administration and DevOps. I have
-          experience in software development, technical monitoring, and office assistance. I have knowledge in various
-          programming languages, databases, computer networks, and computer assembly and maintenance. Basically,
-          technology and innovation have been part of my life since I was a kid, when I tried to fix my video
-          games by myself to adulthood where I sought to deepen my knowledge in programming courses. I am a curious,
-          creative, proactive person committed to my goals. I like to learn new things, to work in a team, and to face
-          challenges. In my free time, I like to be with my wife and son, play video games, learn something new, and
-          practice sports.</p>
-      </div>
-    </div>
-    <div id="certifications-content" style="display: none;">
-      <h1>Certifications</h1>
-      <div class="container-body">
-        <div class="panel active" data-panel="graduations"
-          style="background-image: url('https://images.pexels.com/photos/7942430/pexels-photo-7942430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-color: white;">
-          <h3>Graduations</h3>
-        </div>
-        <div class="panel" data-panel="courses"
-          style="background-image: url('https://images.pexels.com/photos/5905439/pexels-photo-5905439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); padding-left:0.3%;    background-position:bottom;">
-          <h3>Courses</h3>
-        </div>
-      </div>
-      <br>
+  <button class="my-nav-btn open-btn">
+    <i class="fas fa-bars"></i>
+  </button>
+  <div class="my-nav my-nav-green">
+    <div class="my-nav my-nav-yellow">
+      <div class="my-nav my-nav-blue">
+        <div class="my-nav my-nav-white">
+          <button class="my-nav-btn close-btn">
+            <i class="fas fa-times"></i>
+          </button>
 
-      <div id="body-content"></div>
-      <div id="graduations-body-content" style="display: none;">
+          <img src="templates/image.jpg" alt="" class="my-foto">
+
+          <ul class="list">
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#" id="certifications">CERTIFICATIONS</a></li>
+            <li id="certificationsList" class="certifications-list" style="display: none;">
+              <ul>
+                <li><a href="#">Graduations</a></li>
+                <li><a href="#">Courses</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#" id="projects">PROJECTS</a></li>
+            <li id="projectList" class="project-list" style="display: none;">
+              <ul>
+                <li><a href="#">HTML/CSS</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">Javascript</a></li>
+                <li><a href="#">Unity</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1 id="text" class="text"></h1>
+  <div class="main-background">
+    <div id="main-content" class="content">
+      <div id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hello, I am Renato Francisco Souza de Oliveira, a professional passionate about technology and innovation. I
+          have a degree in Physical Education, Digital Game Design, and I am pursuing a Bachelor’s Degree in
+          Administration, a Postgraduate Certificate in DevOps, and a Postgraduate Certificate in Software Engineering.
+          I have experience in software development, technical monitoring, and office assistance. My knowledge spans
+          various programming languages, databases, computer networks, and computer assembly and maintenance. Basically,
+          technology and innovation have been part of my life since I was a kid, when I tried to fix my video games by
+          myself to adulthood where I sought to deepen my knowledge in programming courses.
+          I am a curious, creative, proactive person committed to my goals. I like to learn new things, to work in a
+          team,
+          and to face challenges. In my free time, I like to be with my wife and son, play video games, learn something
+          new, and practice sports.</p>
+      </div>
+      <div id="skills" class="section">
+        <h2>Skills</h2>
+        <br>
+        <div>
+          <h3 class="content-subtitle">SO</h3>
+          <div class="my-line"></div>
+        </div>
+        <div class="skill-handler">
+          <img class="skill-icon"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" />
+          <img class="skill-icon"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain-wordmark.svg" />
+        </div>
+        <div>
+          <h3 class="skill-title">Programming Languages</h3>
+          <div class="my-line"></div>
+        </div>
+        <div class="skill-handler">
+          <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+          <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
+          <img class="skill-icon"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
+          <img class="skill-icon"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+          <img class="skill-icon"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+          <img class="skill-icon"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+          <img class="skill-icon"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+        </div>
+        <div>
+          <h3 class="skill-title">Frameworks</h3>
+          <div class="my-line"></div>
+        </div>
+        <div class="skill-handler">
+          <img class="skill-icon"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg" />
+          <img class="skill-icon"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" />
+          <img class="skill-icon"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" />
+          <img class="skill-icon"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+          <img class="skill-icon"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original-wordmark.svg" />
+          <img class="skill-icon"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original-wordmark.svg" />
+
+        </div>
+        <img class="skill-info"
+          src="https://camo.githubusercontent.com/d3a4f1d3a7dd6a6144c0eafd966cf028f8698e3cdaf9804478a983cfc9be60ff/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67732f3f757365726e616d653d72656e61376f736f757a61267468656d653d64726163756c61">
+      </div>
+      <div id="graduations" class="section">
         <h2>Graduations</h2>
         <br>
         <h3 class="content-subtitle">Completed</h3>
         <div class="my-line"></div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card mb-3 h-auto" style="border: orangered solid 2px;">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img
-                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/396554829_720628913436190_4874987991645183328_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=KkdOf3QWnHkAX__QkEX&_nc_ht=scontent.fsod2-1.fna&oh=00_AfAcr_PwmHyP5TB8xVU5swq1aeVS9DR11TFkIVSbzRnv4Q&oe=6599C44D"
-                    class="img-fluid rounded-start h-100">
+                  <img src="templates/facens.jpg" class="img-fluid rounded-start certifications-img" alt="...">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -100,13 +146,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card mb-3" style="border: orangered solid 2px;">
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img
-                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/391708139_700544175444045_3192366584345460721_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeG1BYdxh0YuZwl96An3uH2mOqa2a6gYCGo6prZrqBgIatfhQwSY-3Bhqts4S--gEvV7ZiLOVZjEkVaKZKc0LvRr&_nc_ohc=PR8-_CVLSN8AX8JyjI5&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCWFGerFuGNeE8TPg2L1IrS3eBUURNpS6bDefi3XuyEkQ&oe=659BF26B"
-                    class="img-fluid rounded-start h-100">
+                  <img src="templates/anhanguera.jpg" class="img-fluid rounded-start certifications-img" alt="...">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -119,35 +163,15 @@
             </div>
           </div>
         </div>
-        <br><br>
+        <br>
         <h3 class="content-subtitle">Studying</h3>
         <div class="my-line"></div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card mb-3" style="border: orangered solid 2px;">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img
-                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/391708139_700544175444045_3192366584345460721_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeG1BYdxh0YuZwl96An3uH2mOqa2a6gYCGo6prZrqBgIatfhQwSY-3Bhqts4S--gEvV7ZiLOVZjEkVaKZKc0LvRr&_nc_ohc=PR8-_CVLSN8AX8JyjI5&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCWFGerFuGNeE8TPg2L1IrS3eBUURNpS6bDefi3XuyEkQ&oe=659BF26B"
-                    class="img-fluid rounded-start h-100">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h3 class="card-title">DevOps</h3>
-                    <h4 class="card-text">Postgraduate in DevOps by Anhanguera College</h4>
-                    <h5 class="card-text text-body-secondary">2023 - 2024</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card mb-3" style="border: orangered solid 2px;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img
-                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/391708139_700544175444045_3192366584345460721_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeG1BYdxh0YuZwl96An3uH2mOqa2a6gYCGo6prZrqBgIatfhQwSY-3Bhqts4S--gEvV7ZiLOVZjEkVaKZKc0LvRr&_nc_ohc=PR8-_CVLSN8AX8JyjI5&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCWFGerFuGNeE8TPg2L1IrS3eBUURNpS6bDefi3XuyEkQ&oe=659BF26B"
-                    class="img-fluid rounded-start h-100">
+                  <img src="templates/anhanguera.jpg" class="img-fluid rounded-start certifications-img" alt="...">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -159,39 +183,67 @@
               </div>
             </div>
           </div>
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="templates/anhanguera.jpg" class="img-fluid rounded-start certifications-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title">DevOps</h3>
+                    <h4 class="card-text">Postgraduate in DevOps by Anhanguera College</h4>
+                    <h5 class="card-text text-body-secondary">2023 - 2024</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="templates/anhanguera.jpg" class="img-fluid rounded-start certifications-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title">Software Engineering</h3>
+                    <h4 class="card-text">Postgraduate in Software Engineering by Anhanguera College</h4>
+                    <h5 class="card-text text-body-secondary">2024</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div id="courses-body-content" style="display: none;">
+      <div id="courses" class="section">
         <h2>Courses</h2>
         <br>
         <h3 class="content-subtitle">Completed</h3>
         <div class="my-line"></div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card mb-3" style="border: orangered solid 2px;">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img
-                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/356852103_647300394105054_4031791278935114061_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeFK9wCSQqfBXyZ2UNbreWXYXWHXS2gMZ0FdYddLaAxnQRNukeHUm3L8gLVG9HwlXqAPbOIl_pSkdwEpFGtsRvkx&_nc_ohc=yMO0WJ3vGwIAX8e3j0X&_nc_ht=scontent.fsod2-1.fna&oh=00_AfAmRposgAqllijiovU73NH57AxOnWmkeOY-0zIyw7cv_g&oe=659AA0C0"
-                    class="img-fluid rounded-start h-100">
+                  <img src="templates/edx.png" class="img-fluid rounded-start certifications-img" alt="...">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
                     <h3 class="card-title">Python</h3>
-                    <h4 class="card-text">Introduction to Programming in Python by EDX Harvard</h4>
+                    <h5 class="card-text">Introduction to Programming in Python by EDX Harvard</h5>
                     <h5 class="card-text text-body-secondary">2023</h5>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card mb-3" style="border: orangered solid 2px;">
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img
-                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/391708139_700544175444045_3192366584345460721_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeG1BYdxh0YuZwl96An3uH2mOqa2a6gYCGo6prZrqBgIatfhQwSY-3Bhqts4S--gEvV7ZiLOVZjEkVaKZKc0LvRr&_nc_ohc=PR8-_CVLSN8AX8JyjI5&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCWFGerFuGNeE8TPg2L1IrS3eBUURNpS6bDefi3XuyEkQ&oe=659BF26B"
-                    class="img-fluid rounded-start h-100">
+                  <img src="templates/anhanguera.jpg" class="img-fluid rounded-start certifications-img" alt="...">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -203,13 +255,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card mb-3" style="border: orangered solid 2px;">
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img
-                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/391708139_700544175444045_3192366584345460721_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeG1BYdxh0YuZwl96An3uH2mOqa2a6gYCGo6prZrqBgIatfhQwSY-3Bhqts4S--gEvV7ZiLOVZjEkVaKZKc0LvRr&_nc_ohc=PR8-_CVLSN8AX8JyjI5&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCWFGerFuGNeE8TPg2L1IrS3eBUURNpS6bDefi3XuyEkQ&oe=659BF26B"
-                    class="img-fluid rounded-start h-100">
+                  <img src="templates/anhanguera.jpg" class="img-fluid rounded-start certifications-img" alt="...">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -221,13 +271,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card mb-3" style="border: orangered solid 2px;">
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img
-                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/391708139_700544175444045_3192366584345460721_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeG1BYdxh0YuZwl96An3uH2mOqa2a6gYCGo6prZrqBgIatfhQwSY-3Bhqts4S--gEvV7ZiLOVZjEkVaKZKc0LvRr&_nc_ohc=PR8-_CVLSN8AX8JyjI5&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCWFGerFuGNeE8TPg2L1IrS3eBUURNpS6bDefi3XuyEkQ&oe=659BF26B"
-                    class="img-fluid rounded-start h-100">
+                  <img src="templates/anhanguera.jpg" class="img-fluid rounded-start certifications-img" alt="...">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -239,13 +287,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card mb-3" style="border: orangered solid 2px;">
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img
-                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/416223803_719652430269811_7752775662508562907_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEfY-cwP63Z8ZEeE1LvRPZqMQo3N541aysxCjc3njVrK9QpBiGRSlKetzHYwv9-GHYHn3Chhm_DRtOPJCdXUC6P&_nc_ohc=qZPzmn3Vbg8AX-n5I0i&_nc_ht=scontent.fsod2-1.fna&oh=00_AfDww0gGspEDz9iodzf0Eu0jPMFVr4iOTbs-8qsjt-jHkA&oe=659C4451"
-                    class="img-fluid rounded-start h-100">
+                  <img src="templates/senac.png" class="img-fluid rounded-start certifications-img" alt="...">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -257,13 +303,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card mb-3" style="border: orangered solid 2px;">
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img
-                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/328288886_1205068916772472_3498112728475517139_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeHtQRZL36IF_SVholNe7QvwSVVC9nGZyWxJVUL2cZnJbL6iy7IJsQQg8FvbzrbtKcv07E5MeReE1VAlKhfxEFut&_nc_ohc=qvYcSdlGQ6IAX-C9BPK&_nc_ht=scontent.fsod2-1.fna&oh=00_AfCP44z93SvdOjIWh5apUhd1M-Mr13Z5XtiGFDEkTEQL4w&oe=659BB33D"
-                    class="img-fluid rounded-start h-100">
+                  <img src="templates/microcamp.png" class="img-fluid rounded-start certifications-img" alt="...">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -275,13 +319,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card mb-3" style="border: orangered solid 2px;">
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img
-                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/399690041_742604967894431_2942842708267123633_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEtR-lKeCzWEwfb_44AjwhY-C3_IZi2rir4Lf8hmLauKuikueqKSk0p7zHjOYRGNBXtsHf9kZYx46AALAh0SwJg&_nc_ohc=jpwU_bFu24AAX9tzWUd&_nc_ht=scontent.fsod2-1.fna&oh=00_AfBaPyP9mHPUBtWlZkkg_imhKg3-_DTXMGPEFFbwxGgcIg&oe=659B53F5"
-                    class="img-fluid rounded-start h-100">
+                  <img src="templates/pitagoras.png" class="img-fluid rounded-start certifications-img" alt="...">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -293,18 +335,16 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card mb-3" style="border: orangered solid 2px;">
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img
-                    src="https://scontent.fsod2-1.fna.fbcdn.net/v/t39.30808-6/327236885_419485463699209_6662801759029961903_n.png?_nc_cat=110&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeE81kqZrrlOTokj0kiUzhgpya2PN20P_x_JrY83bQ__H9mgMxYNWb6pzKXAwp522__Zj14ynYz0fVvYXkZgz7cJ&_nc_ohc=xm6mnRW7o0YAX8fRbh6&_nc_ht=scontent.fsod2-1.fna&oh=00_AfB8OIHab4_oEV-DfQk06cBLTdYBx6xshnQt6u1Ly1l11A&oe=659C5002"
-                    class="img-fluid rounded-start h-100">
+                  <img src="templates/senai.png" class="img-fluid rounded-start certifications-img" alt="...">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h3 class="card-title">Assembly and Maintenance</h3>
-                    <h4 class="card-text">Assembly and Maintenance of Computers by SENAI</h4>
+                    <h4 class="card-title">Assembly and Maintenance</h4>
+                    <h5 class="card-text">Assembly and Maintenance of Computers by SENAI</h5>
                     <h5 class="card-text text-body-secondary">2011</h5>
                   </div>
                 </div>
@@ -312,95 +352,41 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div id="skills-content" style="display: none;">
-      <h1>Skills</h1>
-      <div>
-        <h3 class="content-subtitle">SO</h3>
-        <div class="my-line"></div>
-      </div>
-      <div class="skill-handler">
-        <img class="skill-icon"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" />
-        <img class="skill-icon"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain-wordmark.svg" />
-      </div>
-      <div>
-        <h3 class="skill-title">Programming Languages</h3>
-        <div class="my-line"></div>
-      </div>
-      <div class="skill-handler">
-        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
-        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
-        <img class="skill-icon"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
-        <img class="skill-icon"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
-        <img class="skill-icon"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
-        <img class="skill-icon"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
-        <img class="skill-icon"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-      </div>
-      <div>
-        <h3 class="skill-title">Frameworks</h3>
-        <div class="my-line"></div>
-      </div>
-      <div class="skill-handler">
-        <img class="skill-icon"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg" />
-        <img class="skill-icon"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" />
-        <img class="skill-icon"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" />
-        <img class="skill-icon"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
-        <img class="skill-icon"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original-wordmark.svg" />
-        <img class="skill-icon"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original-wordmark.svg" />
-
-      </div>
-      <img class="skill-info"
-        src="https://camo.githubusercontent.com/d3a4f1d3a7dd6a6144c0eafd966cf028f8698e3cdaf9804478a983cfc9be60ff/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67732f3f757365726e616d653d72656e61376f736f757a61267468656d653d64726163756c61">
-    </div>
-    <div id="projects-content" style="display: none;">
-      <h1>Projects</h1>
-      <div class="container-body">
-        <div class="panel active" data-panel="html-css"
-          style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg'); background-color: white;">
-          <h3>HTML/CSS</h3>
-        </div>
-        <div class="panel" data-panel="javascript"
-          style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg'); padding-left:0.3%;    background-position:bottom;">
-          <h3>Javascript</h3>
-        </div>
-        <div class="panel" data-panel="py"
-          style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png'); background-color: white;">
-          <h3>Python</h3>
-        </div>
-        <div class="panel" data-panel="unity"
-          style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Unity_2021.svg/2560px-Unity_2021.svg.png'); background-color: white;">
-          <h3>Unity</h3>
-        </div>
-      </div>
-      <div id="body-content"></div>
-      <div id="html-css-body-content" style="display: none;">
         <br>
+        <h3 class="content-subtitle">Coursing</h3>
+        <div class="my-line"></div>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="templates/edx.png" class="img-fluid rounded-start certifications-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title">Django</h3>
+                    <h5 class="card-text">Web Programming with Python and JavaScript by EDX Harvard</h5>
+                    <h5 class="card-text text-body-secondary">2023</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="html-css" class="section">
         <h2>HTML/CSS</h2>
         <br>
         <div class="card-group">
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card m-3 " style="border: orangered solid 2px;">
+          <div class="col-lg-4 col-md-8 mb-4">
+            <div class="card m-3 ">
               <div class="responsive-iframe">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/5OgPzWyMAMY?si=dlmVNV2P8gU5f0CR"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
               </div>
-              <div class="card-body">
+              <div class="card-body" id="projects-card-body">
                 <h5 class="card-title"><strong>Search</strong></h5>
                 <p class="card-text">This project is a search page, with a style similar to Google’s, where when you
                   search it redirects directly to Google. It also has features to search for images and advanced search.
@@ -421,27 +407,20 @@
             </div>
           </div>
         </div>
-
       </div>
-      <div id="javascript-body-content" style="display: none;">
-        <br>
-        <h2>Javascript</h2>
-        <h3>This area is still under construction! As soon as possible, we will have projects here.</h3>
-      </div>
-      <div id="py-body-content" style="display: none;">
-        <br>
+      <div id="python" class="section">
         <h2>Python</h2>
         <br>
         <div class="card-group">
           <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card m-3 " style="border: orangered solid 2px;">
+            <div class="card m-3 ">
               <div class="responsive-iframe">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/fcRdhgsVqMA?si=d6_zmxRD0kGqS9j4"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
               </div>
-              <div class="card-body">
+              <div class="card-body" id="projects-card-body">
                 <h5 class="card-title"><strong>Wiki</strong></h5>
                 <p class="card-text">This project is a search page, with a style similar to Google’s, where when you
                   search it redirects directly to Google. It also has features to search for images and advanced search.
@@ -464,14 +443,14 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card m-3 " style="border: orangered solid 2px;">
+            <div class="card m-3 ">
               <div class="responsive-iframe">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/NBmo1AAIqCY?si=OC95u_8p9Seom9RE"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
               </div>
-              <div class="card-body">
+              <div class="card-body" id="projects-card-body">
                 <h5 class="card-title"><strong>Commerce</strong></h5>
                 <p class="card-text">This project is a web commerce focused on auctions where users can advertise their
                   laptops and other users can bid on them, until the advertiser closes the auction. It is also possible
@@ -495,14 +474,14 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card m-3 " style="border: orangered solid 2px;">
+            <div class="card m-3 ">
               <div class="responsive-iframe">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/T02828OoS38?si=4gkAM3CQMVfu1KPg"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
               </div>
-              <div class="card-body">
+              <div class="card-body" id="projects-card-body">
                 <h5 class="card-title"><strong>Mail</strong></h5>
                 <p class="card-text">A webapp where users are created for email, they can send and receive emails, reply
                   and archive them.
@@ -528,14 +507,14 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card m-3 " style="border: orangered solid 2px;">
+            <div class="card m-3 ">
               <div class="responsive-iframe">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/SxVve244qYw?si=f11ufdmbUk4dd343"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
               </div>
-              <div class="card-body">
+              <div class="card-body" id="projects-card-body">
                 <h5 class="card-title"><strong>Network</strong></h5>
                 <p class="card-text">A social network where people can post, edit their posted comments, follow other
                   users, and like other people’s posts.
@@ -562,43 +541,44 @@
           </div>
         </div>
       </div>
-      <div id="unity-body-content" style="display: none;">
-        <br>
-        <h2>Unity</h2>
-        <h3>This area is still under construction! As soon as possible, we will have projects here.</h3>
-
+      <div id="javascript" class="section">
+        <h2>Javascript</h2>
+        <p>This area is still under construction! As soon as possible, we will have projects here.</p>
       </div>
-    </div>
-    <div id="contact-me-content" style="display: none;">
-      <h1>Contact Me</h1>
-      <a href="https://www.facebook.com/rena7osouza" target="_blank" class="contact-me-link">
-        <img class="contact-me-img"
-          src="https://play-lh.googleusercontent.com/KCMTYuiTrKom4Vyf0G4foetVOwhKWzNbHWumV73IXexAIy5TTgZipL52WTt8ICL-oIo=w240-h480"
-          alt="Facebook" />Facebook</a>
-      <a href="https://www.instagram.com/rena7osouza/" target="_blank" class="contact-me-link">
-        <img class="contact-me-img"
-          src="https://play-lh.googleusercontent.com/VRMWkE5p3CkWhJs6nv-9ZsLAs1QOg5ob1_3qg-rckwYW7yp1fMrYZqnEFpk0IoVP4LM=w240-h480"
-          alt="Instagram" />Instagram</a>
-      <a href="https://www.linkedin.com/in/renatosouzadeoliveira/" target="_blank" class="contact-me-link">
-        <img class="contact-me-img"
-          src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw=w240-h480"
-          alt="LinkedIn" />LinkedIn</a>
-      <a href="https://www.youtube.com/@Rena7oO" target="_blank" class="contact-me-link">
-        <img class="contact-me-img"
-          src="https://play-lh.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc=s48"
-          alt="Youtube" />Youtube</a>
-      <a href="https://github.com/Rena7oSouza" target="_blank" class="contact-me-link">
-        <img class="contact-me-img" style="background-color: white;"
-          src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU=s48"
-          alt="Github" />Github</a>
-      <a href="mailto:renatofrancisco@hotmail.com" target="_blank" class="contact-me-link">
-        <img class="contact-me-img"
-          src="https://play-lh.googleusercontent.com/DSMBLC-yGuWCdMYzqpNio-brFDS4Th6ERZcmilckYtU9tXqEqMEetwC9JCQoJSLVGF4=w240-h480"
-          alt="Email" />renatofrancisco@hotmail.com</a>
+      <div id="unity" class="section">
+        <h2>Unity</h2>
+        <p>This area is still under construction! As soon as possible, we will have projects here.</p>
+      </div>
+      <div id="contact" class="section">
+        <h2>Contact Me</h2>
+        <a href="https://www.facebook.com/rena7osouza" target="_blank" class="contact-me-link">
+          <img class="contact-me-img"
+            src="https://play-lh.googleusercontent.com/KCMTYuiTrKom4Vyf0G4foetVOwhKWzNbHWumV73IXexAIy5TTgZipL52WTt8ICL-oIo=w240-h480"
+            alt="Facebook" />Facebook</a>
+        <a href="https://www.instagram.com/rena7osouza/" target="_blank" class="contact-me-link">
+          <img class="contact-me-img"
+            src="https://play-lh.googleusercontent.com/VRMWkE5p3CkWhJs6nv-9ZsLAs1QOg5ob1_3qg-rckwYW7yp1fMrYZqnEFpk0IoVP4LM=w240-h480"
+            alt="Instagram" />Instagram</a>
+        <a href="https://www.linkedin.com/in/renatosouzadeoliveira/" target="_blank" class="contact-me-link">
+          <img class="contact-me-img"
+            src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw=w240-h480"
+            alt="LinkedIn" />LinkedIn</a>
+        <a href="https://www.youtube.com/@Rena7oO" target="_blank" class="contact-me-link">
+          <img class="contact-me-img"
+            src="https://play-lh.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc=s48"
+            alt="Youtube" />Youtube</a>
+        <a href="https://github.com/Rena7oSouza" target="_blank" class="contact-me-link">
+          <img class="contact-me-img" style="background-color: white;"
+            src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU=s48"
+            alt="Github" />Github</a>
+        <a href="mailto:renatofrancisco@hotmail.com" target="_blank" class="contact-me-link">
+          <img class="contact-me-img"
+            src="https://play-lh.googleusercontent.com/DSMBLC-yGuWCdMYzqpNio-brFDS4Th6ERZcmilckYtU9tXqEqMEetwC9JCQoJSLVGF4=w240-h480"
+            alt="Email" />renatofrancisco@hotmail.com</a>
+      </div>
     </div>
   </div>
   <script src="script.js"></script>
 </body>
-
 
 </html>

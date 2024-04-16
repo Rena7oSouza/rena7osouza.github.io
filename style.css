@@ -294,13 +294,12 @@ body {
   .menu-open #main-content {
     margin-left: 0;
   }
-  .my-foto {
-    width: 100px;
+  #text {
+    font-size: 16px; 
   }
-  /* Text Styles */
-#text {
-  width: 200px;
 
-}
+  .my-foto {
+    width: 150px;
+  }
   
 }

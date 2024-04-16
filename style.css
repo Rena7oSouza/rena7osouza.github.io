@@ -294,4 +294,9 @@ body {
   .menu-open #main-content {
     margin-left: 0;
   }
+  .my-foto {
+    width: 50%;
+    border-radius: 50%;
+  }
+  
 }

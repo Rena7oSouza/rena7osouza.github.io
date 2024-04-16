@@ -295,12 +295,11 @@ body {
     margin-left: 0;
   }
   .my-foto {
-    width: 80%;
-    border-radius: 50%;
+    width: 100px;
   }
   /* Text Styles */
 #text {
-  width: 80%;
+  width: 200px;
 
 }
   

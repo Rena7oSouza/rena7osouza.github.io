@@ -295,8 +295,13 @@ body {
     margin-left: 0;
   }
   .my-foto {
-    width: 50%;
+    width: 80%;
     border-radius: 50%;
   }
+  /* Text Styles */
+#text {
+  width: 80%;
+
+}
   
 }

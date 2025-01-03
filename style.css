@@ -299,7 +299,36 @@ body {
   height: 100%;
   width: 100%;
 }
+/*Projects List*/
+.project-card {
+  max-height: 600px; 
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; 
+}
 
+.project-card .card-body {
+  flex-grow: 1; 
+  overflow: auto; 
+  padding-bottom: 10px; 
+}
+
+.project-card .responsive-iframe {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.project-card .card-title, 
+.project-card .card-text {
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.project-card .card-body p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 /* Animation */
 @keyframes blink {
@@ -337,5 +366,19 @@ body {
   .my-foto {
     width: 125px;
   }
-  
+  .projects-card-body {
+    min-height: 350px;
+    height: auto; 
+  }
+
+  .project-card .card-body {
+    padding-bottom: 15px; 
+  }
+  #projects-card-body {
+    min-height: 350px;
+  }
+  .project-card .card-body p {
+    font-size: 16px; 
+  }
+
 }

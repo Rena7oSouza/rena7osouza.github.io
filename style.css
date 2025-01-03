@@ -263,17 +263,18 @@ body {
 
 .card {
   border: blue solid 2px !important;
-  min-height: 150px; /* Adiciona uma altura mínima para garantir que todos os cartões tenham o mesmo tamanho */
+  min-height: 150px; 
+  max-width: 540px;
   display: flex;
   flex-direction: column;
 }
 
 .card-body {
-  flex-grow: 1; /* Isso faz com que o conteúdo da card ocupe o espaço disponível */
+  flex-grow: 1;
 }
 
 .card-title, .card-text {
-  font-size: 16px; /* Diminui o tamanho da fonte para que o texto não ultrapasse o limite do cartão */
+  font-size: 20px; 
 }
 
 .certifications-img {
@@ -287,14 +288,12 @@ body {
 }
 
 .card-body h3, .card-body h4, .card-body h5 {
-  margin: 0; /* Remove as margens extras, se houver, para otimizar o espaço */
+  margin: 0; 
 }
 
 .row {
-  height: 100%; /* Garantir que o conteúdo do card ocupe toda a altura disponível */
+  height: 100%; 
 }
-
-/* Ajustes para as imagens se necessário */
 .col-md-4 img {
   object-fit: cover;
   height: 100%;

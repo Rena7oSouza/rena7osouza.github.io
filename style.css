@@ -10,7 +10,7 @@
 body{
   color: var(--textcolor);
   background-color: var(--mainpagecolor);
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .fa-bars{
   color: var(--textcolor);

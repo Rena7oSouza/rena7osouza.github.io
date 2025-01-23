@@ -379,7 +379,7 @@ body{
 
   .graduations-card-body {
     height: auto;
-    margin: 1%;
+    margin-inline: 5%;
   }
 
   .graduations-card-title {

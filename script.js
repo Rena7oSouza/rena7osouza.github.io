@@ -30,6 +30,7 @@ const idMap = {
     'Courses': 'courses',
     'HTML/CSS': 'html-css',
     'Python': 'python',
+    'Python(Django)': 'django',  
     'Contact Me': 'contact'
 };
 

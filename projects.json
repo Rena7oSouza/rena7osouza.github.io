@@ -1,0 +1,252 @@
+[
+  {
+    "category": "html-css",
+    "videoUrl": "https://www.youtube.com/embed/5OgPzWyMAMY?si=dlmVNV2P8gU5f0CR",
+    "title": "Search",
+    "description": "This project is a search page, with a style similar to Google’s, where when you search it redirects directly to Google. It also has features to search for images and advanced search.",
+    "badges": [
+      {
+        "src": "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white",
+        "alt": "HTML5"
+      },
+      {
+        "src": "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white",
+        "alt": "CSS3"
+      }
+    ],
+    "githubLink": "https://github.com/Rena7oSouza/Portfolio/tree/main/HTMLCSS/search"
+  },
+  {
+    "category": "html-css",
+    "videoUrl": "templates/html/landingpage.gif",
+    "title": "Landing Page",
+    "description": "This landing page is designed to guide visitors through a seamless purchasing experience. It highlights the key benefits and features of our product/service, ensuring that potential customers quickly understand its value. The page includes a clear and compelling call-to-action (CTA) to encourage immediate conversions, whether through a purchase, sign-up, or other desired actions. Optimized for both desktop and mobile devices, the layout is clean, visually appealing, and easy to navigate. The content is strategically placed to build trust and provide all the necessary information to make an informed decision. Additionally, the page may feature testimonials, special offers, or product demonstrations to further engage visitors and boost conversion rates.",
+    "badges": [
+      {
+        "src": "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white",
+        "alt": "HTML5"
+      },
+      {
+        "src": "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white",
+        "alt": "CSS3"
+      },
+      {
+        "src": "https://img.shields.io/badge/-boostrap-0D1117?style=for-the-badge&logo=bootstrap&labelColor=0D1117",
+        "alt": "BOOTSTRAP"
+      },
+      {
+        "src": "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black",
+        "alt": "JAVASCRIPT"
+      }
+    ],
+    "githubLink": "https://github.com/Rena7oSouza/Portfolio/tree/main/HTMLCSS/search"
+  },
+  {
+    "category": "python",
+    "videoUrl": "templates/python/Chatbot.gif",
+    "title": "Chatbot",
+    "description": "This project is a simple chatbot with a graphical interface built using Tkinter. It uses the GPT-2 model from Hugging Face’s Transformers library to generate responses locally. The project follows the MVC architecture and includes full test coverage with pytest and behave. It also has features to easily run unit tests and BDD tests, and does not require any token to use the GPT-2 model. ",
+    "badges": [
+      {
+        "src": "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+        "alt": "PYTHON"
+      },
+      {
+        "src": "https://img.shields.io/badge/Hugging%20Face-FFCC00?style=for-the-badge&logo=huggingface&logoColor=black",
+        "alt": "IA"
+      }
+    ],
+    "githubLink": "https://github.com/Rena7oSouza/Portfolio/tree/main/Python/Chatbot"
+  },
+  {
+    "category": "python",
+    "videoUrl": "templates/python/Webscrapper.gif",
+    "title": "WebScrapper",
+    "description": "This project is a simple Python webscraper that retrieves the current USD to BRL exchange rate from x-rates.com using Requests and BeautifulSoup. It follows the MVC architecture with a Tkinter GUI, where the user clicks a button to get the exchange rate, which is then saved to a CSV file. It also includes unit tests with Pytest and BDD tests with Behave. Developed to practice web scraping, GUI development, and automated testing in Python.",
+    "badges": [
+      {
+        "src": "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+        "alt": "PYTHON"
+      },
+      {
+        "src": "https://img.shields.io/badge/Hugging%20Face-FFCC00?style=for-the-badge&logo=huggingface&logoColor=black",
+        "alt": "IA"
+      }
+    ],
+    "githubLink": "https://github.com/Rena7oSouza/Portfolio/tree/main/Python/WebScrapper"
+  },
+  {
+    "category": "python",
+    "videoUrl": "templates/python/VideoSummarizer.gif",
+    "title": "VideoSummarizer",
+    "description": "Python app that downloads, transcribes, and summarizes YouTube videos using AI models with a simple GUI.",
+    "badges": [
+      {
+        "src": "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+        "alt": "PYTHON"
+      },
+      {
+        "src": "https://img.shields.io/badge/Hugging%20Face-FFCC00?style=for-the-badge&logo=huggingface&logoColor=black",
+        "alt": "IA"
+      }
+    ],
+    "githubLink": "https://github.com/Rena7oSouza/Portfolio/tree/main/Python/VideoSummarizer"
+  },
+  {
+    "category": "python",
+    "videoUrl": "https://www.youtube.com/embed/5OgPzWyMAMY?si=dlmVNV2P8gU5f0CR",
+    "title": "Wiki",
+    "description": "A Django web app that allows users to create, edit, and view encyclopedia entries with Markdown support, similar to a simplified Wikipedia.",
+    "badges": [
+      {
+        "src": "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white",
+        "alt": "HTML5"
+      },
+      {
+        "src": "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white",
+        "alt": "CSS3"
+      },
+      {
+        "src": "https://img.shields.io/badge/-boostrap-0D1117?style=for-the-badge&logo=bootstrap&labelColor=0D1117",
+        "alt": "BOOTSTRAP"
+      },
+      {
+        "src": "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+        "alt": "PYTHON"
+      },
+      {
+        "src": "https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white",
+        "alt": "DJANGO"
+      }
+    ],
+    "githubLink": "https://github.com/Rena7oSouza/Portfolio/tree/main/Django/wiki"
+  },
+  {
+    "category": "python",
+    "videoUrl": "https://www.youtube.com/embed/NBmo1AAIqCY?si=BEjcCM8bjPYnMA8V",
+    "title": "Commerce",
+    "description": "This project is a web commerce focused on auctions where users can advertise their laptops and other users can bid on them, until the advertiser closes the auction. It is also possible to write comments on the advertised items.",
+    "badges": [
+      {
+        "src": "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white",
+        "alt": "HTML5"
+      },
+      {
+        "src": "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white",
+        "alt": "CSS3"
+      },
+      {
+        "src": "https://img.shields.io/badge/-boostrap-0D1117?style=for-the-badge&logo=bootstrap&labelColor=0D1117",
+        "alt": "BOOTSTRAP"
+      },
+      {
+        "src": "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+        "alt": "PYTHON"
+      },
+      {
+        "src": "https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white",
+        "alt": "DJANGO"
+      }
+    ],
+    "githubLink": "https://github.com/Rena7oSouza/Portfolio/tree/main/Django/commerce"
+  },
+  {
+    "category": "python",
+    "videoUrl": "https://www.youtube.com/embed/T02828OoS38?si=eg-PJKqhvowZ427h",
+    "title": "Mail",
+    "description": "A webapp where users are created for email, they can send and receive emails, reply and archive them.",
+    "badges": [
+      {
+        "src": "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white",
+        "alt": "HTML5"
+      },
+      {
+        "src": "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white",
+        "alt": "CSS3"
+      },
+      {
+        "src": "https://img.shields.io/badge/-boostrap-0D1117?style=for-the-badge&logo=bootstrap&labelColor=0D1117",
+        "alt": "BOOTSTRAP"
+      },
+      {
+        "src": "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black",
+        "alt": "JAVASCRIPT"
+      },
+      {
+        "src": "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+        "alt": "PYTHON"
+      },
+      {
+        "src": "https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white",
+        "alt": "DJANGO"
+      }
+    ],
+    "githubLink": "https://github.com/Rena7oSouza/Portfolio/tree/main/Django/mail"
+  },
+  {
+    "category": "python",
+    "videoUrl": "https://www.youtube.com/embed/NBmo1AAIqCY?si=5XxXTYT9ubLm5oFB",
+    "title": "Network",
+    "description": "A social network where people can post, edit their posted comments, follow other users, and like other people’s posts.",
+    "badges": [
+      {
+        "src": "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white",
+        "alt": "HTML5"
+      },
+      {
+        "src": "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white",
+        "alt": "CSS3"
+      },
+      {
+        "src": "https://img.shields.io/badge/-boostrap-0D1117?style=for-the-badge&logo=bootstrap&labelColor=0D1117",
+        "alt": "BOOTSTRAP"
+      },
+      {
+        "src": "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black",
+        "alt": "JAVASCRIPT"
+      },
+      {
+        "src": "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+        "alt": "PYTHON"
+      },
+      {
+        "src": "https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white",
+        "alt": "DJANGO"
+      }
+    ],
+    "githubLink": "https://github.com/Rena7oSouza/Portfolio/tree/main/Django/network"
+  },
+  {
+    "category": "python",
+    "videoUrl": "https://www.youtube.com/embed/NBmo1AAIqCY?si=5XxXTYT9ubLm5oFB",
+    "title": "GymCraft",
+    "description": "A workout builder for organize your gym trains through the week.",
+    "badges": [
+      {
+        "src": "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white",
+        "alt": "HTML5"
+      },
+      {
+        "src": "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white",
+        "alt": "CSS3"
+      },
+      {
+        "src": "https://img.shields.io/badge/-boostrap-0D1117?style=for-the-badge&logo=bootstrap&labelColor=0D1117",
+        "alt": "BOOTSTRAP"
+      },
+      {
+        "src": "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black",
+        "alt": "JAVASCRIPT"
+      },
+      {
+        "src": "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+        "alt": "PYTHON"
+      },
+      {
+        "src": "https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white",
+        "alt": "DJANGO"
+      }
+    ],
+    "githubLink": "https://github.com/Rena7oSouza/Portfolio/tree/main/Django/gymcraft"
+  }
+]

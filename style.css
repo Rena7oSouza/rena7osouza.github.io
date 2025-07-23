@@ -1,5 +1,6 @@
 :root {
-  --bordercolor: #0044ff; /* also the third nav color*/
+  --bordercolor: #0044ff;
+  /* also the third nav color*/
   --textcolor: black;
   --marginprojectcards: 2%;
   --firstnavcolor: rgb(94, 255, 0);
@@ -7,14 +8,16 @@
   --mainpagecolor: white;
 }
 
-body{
+body {
   color: var(--textcolor);
   background-color: var(--mainpagecolor);
   overflow: hidden;
 }
-.fa-bars{
+
+.fa-bars {
   color: var(--textcolor);
 }
+
 #header {
   position: relative;
 }
@@ -72,7 +75,7 @@ body{
 }
 
 .my-nav-green {
-  background-color:var(--firstnavcolor);
+  background-color: var(--firstnavcolor);
   width: 60%;
   max-width: 320px;
   min-width: 160px;
@@ -267,15 +270,16 @@ body{
   border: 2px solid var(--bordercolor);
   border-radius: 12px;
   padding: 20px;
+  padding-bottom: 10px;
   background-color: var(--mainpagecolor);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 2%;
   flex: 1;
-  min-height: 85vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  max-height: 85vh;
+  max-height: 90vh;
   overflow-x: hidden;
 }
 
@@ -288,21 +292,34 @@ body{
 
 .content h2 {
   margin-bottom: 2%;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--textcolor);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
 }
+
+.content h2::after {
+  content: "";
+  display: block;
+  width: 15%;
+  height: 3px;
+  background-color: var(--bordercolor);
+  margin-top: 0.5rem;
+  margin-left: 0;
+  /* alinha à esquerda */
+  border-radius: 2px;
+}
+
 
 .skill-icon {
   width: 10%;
   margin: 1%;
 }
 
-.line {
-  border: 0;
-  height: 3px;
-  background: var(--bordercolor);
-  margin-bottom: 2%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.507);
-  width: 50%;
-}
 
 .skill-info {
   margin-top: 2%;
@@ -314,10 +331,6 @@ body{
     width: 15%;
   }
 
-  .line {
-    width: 90% !important;
-    margin-bottom: 5%;
-  }
 
   #skills h4 {
     font-size: 15px;
@@ -420,23 +433,25 @@ body{
 .project-cards-body {
   overflow: hidden;
   margin: var(--marginprojectcards);
-  
+
 }
 
-.project-cards-text{
+.project-cards-text {
   max-height: 150px;
   overflow-y: auto;
   padding-right: 5%;
 }
 
-.project-cards-footer, .project-cards-footer-links {
+.project-cards-footer,
+.project-cards-footer-links {
   overflow: hidden;
   margin: var(--marginprojectcards);
 }
 
-.project-cards-footer-links{
+.project-cards-footer-links {
   margin-top: auto;
 }
+
 .project-cards-footer-images {
   justify-content: space-between;
 }
@@ -455,6 +470,54 @@ body{
 
 .project-cards-footer-lnk:hover {
   transform: scale(1.1);
+}
+
+.filter-line {
+  width: 90%;
+  border: 2px solid var(--bordercolor);
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.filter-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.filter-btn img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+/* Hover effect */
+.filter-btn:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.filter-btn:active img {
+  transform: scale(0.98);
+  filter: brightness(0.9);
+}
+
+#project-filters h5 {
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
 }
 
 .contact-links {

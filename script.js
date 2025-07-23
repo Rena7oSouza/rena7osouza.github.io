@@ -169,7 +169,6 @@ async function generateCardsFromJson() {
     try {
         const response = await fetch('projects.json');
         const projects = await response.json();
-        console.log(projects);
         projects.forEach(project => {
             const section = document.getElementById(project.category);
             if (!section) {

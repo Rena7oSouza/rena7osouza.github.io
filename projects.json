@@ -54,6 +54,18 @@
       {
         "src": "https://img.shields.io/badge/Hugging%20Face-FFCC00?style=for-the-badge&logo=huggingface&logoColor=black",
         "alt": "IA"
+      },
+      {
+        "src": "https://img.shields.io/badge/Tkinter-FF5733?style=for-the-badge&logo=python&logoColor=white",
+        "alt": ""
+      },
+      {
+        "src": "https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white",
+        "alt": ""
+      },
+      {
+        "src": "https://img.shields.io/badge/behave-7CFC00?style=for-the-badge&logo=python&logoColor=white",
+        "alt": ""
       }
     ],
     "githubLink": "https://github.com/Rena7oSouza/Portfolio/tree/main/Python/Chatbot"
@@ -69,8 +81,20 @@
         "alt": "PYTHON"
       },
       {
-        "src": "https://img.shields.io/badge/Hugging%20Face-FFCC00?style=for-the-badge&logo=huggingface&logoColor=black",
-        "alt": "IA"
+        "src": "https://img.shields.io/badge/BeautifulSoup4-4B0082?style=for-the-badge&logo=python&logoColor=white",
+        "alt": "AUTOMATION"
+      },
+      {
+        "src": "https://img.shields.io/badge/Tkinter-FF5733?style=for-the-badge&logo=python&logoColor=white",
+        "alt": ""
+      },
+      {
+        "src": "https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white",
+        "alt": ""
+      },
+      {
+        "src": "https://img.shields.io/badge/behave-7CFC00?style=for-the-badge&logo=python&logoColor=white",
+        "alt": ""
       }
     ],
     "githubLink": "https://github.com/Rena7oSouza/Portfolio/tree/main/Python/WebScrapper"

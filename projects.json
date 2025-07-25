@@ -112,6 +112,18 @@
       {
         "src": "https://img.shields.io/badge/Hugging%20Face-FFCC00?style=for-the-badge&logo=huggingface&logoColor=black",
         "alt": "IA"
+      },
+      {
+        "src": "https://img.shields.io/badge/Tkinter-FF5733?style=for-the-badge&logo=python&logoColor=white",
+        "alt": ""
+      },
+      {
+        "src": "https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white",
+        "alt": ""
+      },
+      {
+        "src": "https://img.shields.io/badge/behave-7CFC00?style=for-the-badge&logo=python&logoColor=white",
+        "alt": ""
       }
     ],
     "githubLink": "https://github.com/Rena7oSouza/Portfolio/tree/main/Python/VideoSummarizer"
@@ -141,6 +153,10 @@
       {
         "src": "https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white",
         "alt": "DJANGO"
+      },
+      {
+        "src": "https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=sqlite&logoColor=white",
+        "alt": "SQL"
       }
     ],
     "githubLink": "https://github.com/Rena7oSouza/Portfolio/tree/main/Django/wiki"

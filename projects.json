@@ -151,12 +151,12 @@
         "alt": "PYTHON"
       },
       {
-        "src": "https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white",
-        "alt": "DJANGO"
-      },
-      {
         "src": "https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=sqlite&logoColor=white",
         "alt": "SQL"
+      },
+      {
+        "src": "https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white",
+        "alt": "DJANGO"
       }
     ],
     "githubLink": "https://github.com/Rena7oSouza/Portfolio/tree/main/Django/wiki"
@@ -182,6 +182,10 @@
       {
         "src": "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
         "alt": "PYTHON"
+      },
+      {
+        "src": "https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=sqlite&logoColor=white",
+        "alt": "SQL"
       },
       {
         "src": "https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white",
@@ -217,6 +221,10 @@
         "alt": "PYTHON"
       },
       {
+        "src": "https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=sqlite&logoColor=white",
+        "alt": "SQL"
+      },
+      {
         "src": "https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white",
         "alt": "DJANGO"
       }
@@ -250,6 +258,10 @@
         "alt": "PYTHON"
       },
       {
+        "src": "https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=sqlite&logoColor=white",
+        "alt": "SQL"
+      },
+      {
         "src": "https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white",
         "alt": "DJANGO"
       }
@@ -281,6 +293,10 @@
       {
         "src": "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
         "alt": "PYTHON"
+      },
+      {
+        "src": "https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=sqlite&logoColor=white",
+        "alt": "SQL"
       },
       {
         "src": "https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white",
